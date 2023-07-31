@@ -22,31 +22,37 @@ export default function Header({}: HeaderProps) {
         {showNav ? (
           <nav className="hidden lg:flex gap-8 px-6 py-4 bg-shadow-medium  rounded-[48px] relative">
             <Link href="/about" className="font-medium text-white">
-              About
+              <span>About</span>
             </Link>
             <Link
               href="/roadmap"
               className="font-medium text-white cursor-pointer"
             >
-              Roadmap
+              <span>Roadmap</span>
             </Link>
             <Link
               href="/tokenmics"
               className="font-medium text-white cursor-pointer"
             >
-              Tokenomics
+              <span>Tokenomics</span>
             </Link>
             <Link
               href="/join"
               className="font-medium text-white cursor-pointer"
             >
-              Join
+              <span>Join</span>
+            </Link>
+            <Link
+              href="/faq"
+              className="font-medium text-white cursor-pointer"
+            >
+              <span>Faq</span>
             </Link>
             <Link href="/" className="font-medium text-white cursor-pointer">
-              Platform
+              <span>Platform</span>
             </Link>
             <div className="bg-shadow-medium-light p-1 flex justify-center items-center absolute top-1 right-6 rounded-[48px]">
-              <p className="text-[8px] text-white">SOON</p>
+              <span className="text-[8px] text-white">SOON</span>
             </div>
           </nav>
         ) : null}

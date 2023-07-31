@@ -9,40 +9,40 @@ export default function Page() {
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden">
       <article className="flex flex-col md:w-[780px] lg:w-[840px] xl:w-[990px] gap-8 lg:gap-[44px] xl:gap-[56px] p-28 text-white z-40"></article>
       <Image
-        alt="card"
         src={card}
-        placeholder="blur"
-        className="hidden sm:flex object-contain z-20"
-        priority
-        quality={100}
-        fill
-        sizes="100vw"
-      />
-      <Image
         alt="card"
+        className="hidden sm:flex object-contain z-20"
+        placeholder="blur"
+        priority
+        quality={100}
+        fill
+        sizes="100vw"
+      />
+      <Image
         src={cardMobile}
-        placeholder="blur"
+        alt="card"
         className="flex sm:hidden object-contain z-20"
+        placeholder="blur"
         priority
         quality={100}
         fill
         sizes="100vw"
       />
       <Image
-        alt="insideBg"
         src={insideBg}
-        placeholder="blur"
+        alt="insideBg"
         className="object-cover"
+        placeholder="blur"
         priority
         quality={100}
         fill
         sizes="100vw"
       />
       <Image
-        alt="cloudsBg"
         src={cloudsBg}
-        placeholder="blur"
+        alt="cloudsBg"
         className="object-cover -z-10"
+        placeholder="blur"
         priority
         quality={100}
         fill

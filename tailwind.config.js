@@ -25,6 +25,7 @@ module.exports = {
         "blue-medium": "#5AB0E3",
         "pink-light": "#FF92F4",
         "gray-light": "#D2D1D9",
+        "white-light": "#ECEEF1",
       },
     },
   },

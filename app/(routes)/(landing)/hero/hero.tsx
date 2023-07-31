@@ -17,31 +17,31 @@ import purpleGradientBt from "@/public/purple-gradient-bt.svg";
 
 export default function Hero() {
   return (
-    <section className="w-full min-h-screen relative">
+    <section className="w-full min-h-screen overflow-hidden relative">
       <Image
-        alt="sunsetBg"
         src={sunsetBg}
+        alt="sunsetBg"
         className="object-cover -z-10"
         quality={100}
         fill
         sizes="100vw"
       />
       <Image
-        alt="cloudsBg"
         src={cloudsBg}
-        placeholder="blur"
+        alt="cloudsBg"
         className="object-cover -z-10 "
+        placeholder="blur"
         priority
         quality={100}
         fill
         sizes="100vw"
       />
-      <div className="flex flex-col w-full max-h-[90%] items-center justify-between fixed bottom-0">
+      <div className="flex flex-col w-full max-h-[90%] items-center justify-between fixed bottom-0 overflow-hidden">
         <Image
-          alt="islandBg"
           src={islandBg}
-          placeholder="blur"
+          alt="islandBg"
           className="object-cover"
+          placeholder="blur"
           priority
           quality={100}
           fill
@@ -49,19 +49,19 @@ export default function Hero() {
         />
         <div className="flex flex-col h-[25vh] justify-end pr-[100px] md:pr-[308px] z-10">
           <button className="hidden md:flex">
-            <Image alt="enterTowerBt" src={enterTowerBt} quality={100} />
+            <Image src={enterTowerBt} alt="enterTowerBt" quality={100} />
           </button>
         </div>
         <div className="flex flex-col h-[25vh] justify-center items-end md:pl-[480px] z-10">
           <button className="hidden md:flex">
-            <Image alt="utilityTowerBt" src={utilityTowerBt} quality={100} />
+            <Image src={utilityTowerBt} alt="utilityTowerBt" quality={100} />
           </button>
         </div>
         <div className="flex flex-col h-[20vh] justify-end z-10">
           <button>
             <Image
-              alt="purpleGradientBt"
               src={purpleGradientBt}
+              alt="purpleGradientBt"
               quality={100}
             />
           </button>
@@ -73,12 +73,14 @@ export default function Hero() {
                 <h1 className="text-white text-[8px]">NEW</h1>
               </div>
             </div>
-            <p className="text-sm font-normal text-white">
+            <h1 className="text-sm font-normal text-white">
               The Snailbrook Litepaper is out.
-            </p>
+            </h1>
             <button className="flex flex-row gap-3 justify-center items-center px-12 py-3 bg-gradient-to-r from-purple-light to-purple-medium rounded-[14px]">
-              <Image alt="download" src={downloadIcon} />
-              <p className="text-xs font-medium text-white">Download now</p>
+              <Image src={downloadIcon} alt="download" />
+              <span className="text-xs font-medium text-white">
+                Download now
+              </span>
             </button>
           </div>
           <div className="flex flex-row gap-x-4 sm:gap-x-6 items-center">

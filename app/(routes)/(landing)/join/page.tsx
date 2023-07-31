@@ -3,46 +3,129 @@ import card from "@/public/card.webp";
 import cardMobile from "@/public/card-mobile.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
+import twitterIcon from "@/public/twitter-icon.svg";
+import telegramIcon from "@/public/telegram-icon.svg";
+import mediumIcon from "@/public/medium-icon.svg";
+import tiktokIcon from "@/public/tiktok-icon.svg";
+import redditIcon from "@/public/reddit-icon.svg";
+import discordIcon from "@/public/discord-icon.svg";
+import youtubeIcon from "@/public/youtube-icon.svg";
+import gitbookIcon from "@/public/gitbook-icon.svg";
 
 export default function Page() {
   return (
-    <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden">
-      <article className="flex flex-col md:w-[780px] lg:w-[840px] xl:w-[990px] gap-8 lg:gap-[44px] xl:gap-[56px] p-28 text-white z-40"></article>
+    <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
+      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-4 xl:gap-8 z-30">
+        <h1 className="text-3xl xl:text-[54px] font-bold xl:font-medium text-white text-center">
+          Official Social Media
+        </h1>
+        <p className="text-sm xl:text-xl text-white text-center mb-4 xl:mb-7">
+          Our Telegram group and Twitter account are the best places to stay
+          updated on the latest SnailBrook City news and connect with fellow
+          community members.
+        </p>
+        <div className="flex flex-row flex-wrap items-center justify-center gap-8 xl:gap-11">
+          <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
+            <Image
+              src={twitterIcon}
+              alt="twitterIcon"
+              className="xl:w-12 xl:h-12"
+              priority
+            />
+          </button>
+          <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
+            <Image
+              src={telegramIcon}
+              alt="telegramIcon"
+              className="xl:w-12 xl:h-12"
+              priority
+            />
+          </button>
+          <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
+            <Image
+              src={mediumIcon}
+              alt="mediumIcon"
+              className="xl:w-12 xl:h-12"
+              priority
+            />
+          </button>
+          <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
+            <Image
+              src={tiktokIcon}
+              alt="tiktokIcon"
+              className="xl:w-12 xl:h-12"
+              priority
+            />
+          </button>
+          <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
+            <Image
+              src={redditIcon}
+              alt="redditIcon"
+              className="xl:w-12 xl:h-12"
+              priority
+            />
+          </button>
+          <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
+            <Image
+              src={discordIcon}
+              alt="discordIcon"
+              className="xl:w-12 xl:h-12"
+              priority
+            />
+          </button>
+          <button className="flex items-center justify-center  w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
+            <Image
+              src={youtubeIcon}
+              alt="youtubeIcon"
+              className="xl:w-12 xl:h-12"
+              priority
+            />
+          </button>
+          <button className="flex items-center justify-center  w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
+            <Image
+              src={gitbookIcon}
+              alt="gitbookIcon"
+              className="xl:w-12 xl:h-12"
+              priority
+            />
+          </button>
+        </div>
+      </article>
       <Image
-        alt="card"
         src={card}
-        placeholder="blur"
-        className="hidden sm:flex object-contain z-20"
-        priority
-        quality={100}
-        fill
-        sizes="100vw"
-      />
-      <Image
         alt="card"
+        className="hidden sm:flex object-contain z-20"
+        placeholder="blur"
+        priority
+        quality={100}
+        fill
+        sizes="100vw"
+      />
+      <Image
         src={cardMobile}
-        placeholder="blur"
+        alt="card"
         className="flex sm:hidden object-contain z-20"
+        placeholder="blur"
         priority
         quality={100}
         fill
         sizes="100vw"
       />
       <Image
-        alt="insideBg"
         src={insideBg}
-        placeholder="blur"
+        alt="insideBg"
         className="object-cover"
+        placeholder="blur"
         priority
         quality={100}
         fill
         sizes="100vw"
       />
       <Image
-        alt="cloudsBg"
         src={cloudsBg}
-        placeholder="blur"
+        alt="cloudsBg"
         className="object-cover -z-10"
+        placeholder="blur"
         priority
         quality={100}
         fill
