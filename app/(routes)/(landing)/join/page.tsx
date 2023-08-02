@@ -13,13 +13,7 @@ import discordIcon from "@/public/discord-icon.svg";
 import youtubeIcon from "@/public/youtube-icon.svg";
 import gitbookIcon from "@/public/gitbook-icon.svg";
 
-type Props = {
-  searchParams: Record<string, string> | null | undefined;
-};
-
-export default function Page({ searchParams }: Props) {
-  const showModal = searchParams?.modal;
-
+export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-4 xl:gap-8 z-30">

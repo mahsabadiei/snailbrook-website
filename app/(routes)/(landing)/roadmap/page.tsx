@@ -6,13 +6,7 @@ import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 
-type Props = {
-  searchParams: Record<string, string> | null | undefined;
-};
-
-export default function Page({ searchParams }: Props) {
-  const showModal = searchParams?.modal;
-
+export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-30">
