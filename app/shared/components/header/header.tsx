@@ -50,7 +50,7 @@ export default function Header({}: HeaderProps) {
             <Image src={volumeHighIcon} alt="volumeHighIcon" priority />
           </button>
           <button
-            onClick={() => router.push(`?modal=true`)}
+            // onClick={() => router.push(`?modal=true`)}
             className="flex items-center justify-center p-4 rounded-[48px] bg-shadow-medium"
           >
             <Image src={categoryIcon} alt="categoryIcon" priority />

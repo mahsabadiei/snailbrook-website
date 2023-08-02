@@ -1,5 +1,4 @@
 import Hero from "./(routes)/(landing)/hero/hero";
-import MenuModal from "./shared/components/menu-modal/menu-modal";
 
 type Props = {
   searchParams: Record<string, string> | null | undefined;
@@ -11,7 +10,6 @@ export default function Home({ searchParams }: Props) {
   return (
     <main className="flex min-h-screen flex-col">
       <Hero />
-      {showModal && <MenuModal />}
     </main>
   );
 }

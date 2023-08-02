@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Card from "./card";
-import MenuModal from "@/app/shared/components/menu-modal/menu-modal";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
@@ -43,7 +42,7 @@ export default function Page({ searchParams }: Props) {
           <Card />
         </div>
       </article>
-      {showModal && <MenuModal />}
+
       <Image
         src={cardBg}
         alt="card"
