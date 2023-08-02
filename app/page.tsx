@@ -1,3 +1,4 @@
+"use client";
 import Hero from "./(routes)/(landing)/hero/hero";
 
 type Props = {

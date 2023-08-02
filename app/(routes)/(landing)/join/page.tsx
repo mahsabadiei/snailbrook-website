@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
