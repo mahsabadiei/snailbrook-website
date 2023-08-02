@@ -1,50 +1,52 @@
 import Link from "next/link";
 import Image from "next/image";
-import card from "@/public/card.webp";
-import cardMobile from "@/public/card-mobile.webp";
+import { MenuModal } from "@/app/shared/components/menuModal/menuModal";
+import cardBg from "@/public/card-bg.webp";
+import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 import Accordion from "./accordion";
+
+type Props = {
+  searchParams: Record<string, string> | null | undefined;
+};
 
 const faqList = [
   {
     key: 1,
     question: "Who is the team behind Snailbrook?",
-    answer:
-      "Who is the team behind Snailbrook?",
+    answer: "Who is the team behind Snailbrook?",
     isOpen: false,
   },
   {
     key: 2,
     question: "What is the team currently working on?",
-    answer:
-      "What is the team currently working on?",
+    answer: "What is the team currently working on?",
     isOpen: false,
   },
   {
     key: 3,
     question: "What is the utility of the SNAIL token?",
-    answer:
-      "What is the utility of the SNAIL token?",
+    answer: "What is the utility of the SNAIL token?",
     isOpen: false,
   },
   {
     key: 4,
     question: "How was the $SNAIL distribution model?",
-    answer:
-      "How was the $SNAIL distribution model?",
+    answer: "How was the $SNAIL distribution model?",
     isOpen: false,
   },
   {
     key: 5,
     question: "How do I buy $SNAIL?",
-    answer:
-      "How do I buy $SNAIL?",
+    answer: "How do I buy $SNAIL?",
     isOpen: false,
   },
 ];
 
-export default function Page() {
+export default function Page({ searchParams }: Props) {
+  const showModal = searchParams?.modal;
+
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-8 overflow-y-auto z-30">
@@ -59,31 +61,30 @@ export default function Page() {
         </p>
 
         {faqList?.map((temp) => (
-        <Accordion
-          question={temp.question}
-          answer={temp.answer}
-          key={temp.key}
-        />
-      ))}
+          <Accordion
+            question={temp.question}
+            answer={temp.answer}
+            key={temp.key}
+          />
+        ))}
       </article>
+      {showModal && <MenuModal />}
       <Image
-        src={card}
+        src={cardBg}
         alt="card"
-        className="hidden sm:flex object-contain z-20"
+        className="hidden sm:flex w-[1170px] h-auto absolute z-20"
         placeholder="blur"
         priority
         quality={100}
-        fill
         sizes="100vw"
       />
       <Image
-        src={cardMobile}
+        src={cardMobileBg}
         alt="card"
-        className="flex sm:hidden object-contain z-20"
+        className="flex sm:hidden w-[582px] h-[536px] absolute z-20"
         placeholder="blur"
         priority
         quality={100}
-        fill
         sizes="100vw"
       />
       <Image

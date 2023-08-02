@@ -1,12 +1,18 @@
 import Image from "next/image";
-import card from "@/public/card.webp";
-import cardMobile from "@/public/card-mobile.webp";
+import { MenuModal } from "@/app/shared/components/menuModal/menuModal";
+import cardBg from "@/public/card-bg.webp";
+import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 import telegramIcon from "@/public/telegram-icon.svg";
 
+type Props = {
+  searchParams: Record<string, string> | null | undefined;
+};
 
-export default function Page() {
+export default function Page({ searchParams }: Props) {
+  const showModal = searchParams?.modal;
+
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-8 xl:gap-[56px] text-white z-30">
@@ -22,29 +28,28 @@ export default function Page() {
             cause.
           </p>
         </span>
-        <button className="flex flex-row w-[258px] h-[54px] xl:w-[279px] xl:h-[72px] gap-2 justify-center items-center px-9 py-2 xl:px-11 xl:py-4 bg-gradient-to-r from-purple-light to-purple-medium rounded-[48px]">
+        <button className="flex flex-row w-[258px] h-[54px] xl:w-[279px] xl:h-[72px] gap-2 justify-center items-center px-9 py-2 xl:px-11 xl:py-4 rounded-[48px] bg-gradient-to-r from-purple-light to-purple-medium">
           <Image src={telegramIcon} alt="download" />
           <span className="text-xl font-medium text-white">Join the memes</span>
         </button>
       </article>
+      {showModal && <MenuModal />}
       <Image
-        src={card}
+        src={cardBg}
         alt="card"
-        className="hidden sm:flex object-contain z-20"
+        className="hidden sm:flex w-[1170px] h-auto absolute z-20"
         placeholder="blur"
         priority
         quality={100}
-        fill
         sizes="100vw"
       />
       <Image
-        src={cardMobile}
+        src={cardMobileBg}
         alt="card"
-        className="flex sm:hidden object-contain z-20"
+        className="flex sm:hidden w-[582px] h-[536px] absolute z-20"
         placeholder="blur"
         priority
         quality={100}
-        fill
         sizes="100vw"
       />
       <Image

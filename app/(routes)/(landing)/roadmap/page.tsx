@@ -1,14 +1,21 @@
 import Image from "next/image";
-import card from "@/public/card.webp";
-import cardMobile from "@/public/card-mobile.webp";
+import Card from "./card";
+import { MenuModal } from "@/app/shared/components/menuModal/menuModal";
+import cardBg from "@/public/card-bg.webp";
+import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
-import Card from "./card";
 
-export default function Page() {
+type Props = {
+  searchParams: Record<string, string> | null | undefined;
+};
+
+export default function Page({ searchParams }: Props) {
+  const showModal = searchParams?.modal;
+
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[461px] sm:w-[537px] sm:h-[410px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-30">
+      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-30">
         <h2 className="text-sm font-medium text-white text-center">
           OUR ROADMAP
         </h2>
@@ -21,7 +28,7 @@ export default function Page() {
           expand SnailBrook, fostering innovation and collaboration among meme
           coin enthusiasts.
         </p>
-        <button className="flex border-box flex-row w-[149px] h-[46px] justify-center items-center px-9 py-2 xl:px-8 xl:py-3 mb-12 bg-gradient-to-r from-purple-light to-purple-medium rounded-[48px]">
+        <button className="flex border-box flex-row w-[149px] h-[46px] justify-center items-center px-9 py-2 xl:px-8 xl:py-3 mb-12 rounded-[48px] bg-gradient-to-r from-purple-light to-purple-medium">
           <span className="text-xs font-medium text-white">Stay updated</span>
         </button>
 
@@ -36,25 +43,23 @@ export default function Page() {
           <Card />
         </div>
       </article>
-
+      {showModal && <MenuModal />}
       <Image
-        src={card}
+        src={cardBg}
         alt="card"
-        className="hidden sm:flex object-contain z-20"
+        className="hidden sm:flex w-[1170px] h-auto absolute z-20"
         placeholder="blur"
         priority
         quality={100}
-        fill
         sizes="100vw"
       />
       <Image
-        src={cardMobile}
+        src={cardMobileBg}
         alt="card"
-        className="flex sm:hidden object-contain z-20"
+        className="flex sm:hidden w-[582px] h-[536px] absolute z-20"
         placeholder="blur"
         priority
         quality={100}
-        fill
         sizes="100vw"
       />
       <Image

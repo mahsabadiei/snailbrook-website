@@ -1,6 +1,7 @@
 import Image from "next/image";
-import card from "@/public/card.webp";
-import cardMobile from "@/public/card-mobile.webp";
+import { MenuModal } from "@/app/shared/components/menuModal/menuModal";
+import cardBg from "@/public/card-bg.webp";
+import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 import twitterIcon from "@/public/twitter-icon.svg";
@@ -12,7 +13,13 @@ import discordIcon from "@/public/discord-icon.svg";
 import youtubeIcon from "@/public/youtube-icon.svg";
 import gitbookIcon from "@/public/gitbook-icon.svg";
 
-export default function Page() {
+type Props = {
+  searchParams: Record<string, string> | null | undefined;
+};
+
+export default function Page({ searchParams }: Props) {
+  const showModal = searchParams?.modal;
+
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-4 xl:gap-8 z-30">
@@ -91,24 +98,23 @@ export default function Page() {
           </button>
         </div>
       </article>
+      {showModal && <MenuModal />}
       <Image
-        src={card}
+        src={cardBg}
         alt="card"
-        className="hidden sm:flex object-contain z-20"
+        className="hidden sm:flex w-[1170px] h-auto absolute z-20"
         placeholder="blur"
         priority
         quality={100}
-        fill
         sizes="100vw"
       />
       <Image
-        src={cardMobile}
+        src={cardMobileBg}
         alt="card"
-        className="flex sm:hidden object-contain z-20"
+        className="flex sm:hidden w-[582px] h-[536px] absolute z-20"
         placeholder="blur"
         priority
         quality={100}
-        fill
         sizes="100vw"
       />
       <Image
