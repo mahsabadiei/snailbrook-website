@@ -1,11 +1,16 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
+import MenuModal from "@/app/shared/components/menu-modal/menu-modal";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 import Accordion from "./accordion";
+
+type Props = {
+  params: {};
+  searchParams: { [key: string]: string | string[] | undefined };
+};
 
 const faqList = [
   {
@@ -40,7 +45,9 @@ const faqList = [
   },
 ];
 
-export default function Page() {
+export default function Page({ searchParams }: Props) {
+  const showModal = searchParams?.modal;
+
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-8 overflow-y-auto z-30">
@@ -62,7 +69,7 @@ export default function Page() {
           />
         ))}
       </article>
-
+      {showModal && <MenuModal />}
       <Image
         src={cardBg}
         alt="card"

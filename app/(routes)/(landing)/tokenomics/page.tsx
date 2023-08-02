@@ -1,15 +1,22 @@
-"use client";
 import Image from "next/image";
+import MenuModal from "@/app/shared/components/menu-modal/menu-modal";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 
-export default function Page() {
+type Props = {
+  params: {};
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default function Page({ searchParams }: Props) {
+  const showModal = searchParams?.modal;
+
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden">
       <article className="flex flex-col w-[260px] h-[461px] sm:w-[537px] sm:h-[410px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-30"></article>
-
+      {showModal && <MenuModal />}
       <Image
         src={cardBg}
         alt="card"

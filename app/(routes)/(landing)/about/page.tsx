@@ -1,12 +1,19 @@
-"use client";
 import Image from "next/image";
+import MenuModal from "@/app/shared/components/menu-modal/menu-modal";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 import telegramIcon from "@/public/telegram-icon.svg";
 
-export default function Page() {
+type Props = {
+  params: {};
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default function Page({ searchParams }: Props) {
+  const showModal = searchParams?.modal;
+
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-8 xl:gap-[56px] text-white z-30">
@@ -27,6 +34,7 @@ export default function Page() {
           <span className="text-xl font-medium text-white">Join the memes</span>
         </button>
       </article>
+      {showModal && <MenuModal />}
       <Image
         src={cardBg}
         alt="card"
