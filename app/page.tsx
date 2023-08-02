@@ -1,5 +1,5 @@
 import Hero from "./(routes)/(landing)/hero/hero";
-import { MenuModal } from "./shared/components/menuModal/menuModal";
+import MenuModal from "./shared/components/menu-modal/menu-modal";
 
 type Props = {
   searchParams: Record<string, string> | null | undefined;

@@ -3,9 +3,8 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import elevatorBg from "@/public/elevator-bg.webp";
-import elevatorMobileBg from "@/public/elevator-mobile-bg.webp";
 
-export function MenuModal() {
+export default function MenuModal() {
   const router = useRouter();
   return (
     <div
@@ -40,14 +39,14 @@ export function MenuModal() {
         useMap="#image-map-mobile"
       />
       <map name="image-map" className="hidden sm:flex">
-        <area
+        {/* <area
           target=""
           alt="governor"
           title="governor"
           href="/governor"
           coords="322,282,83"
           shape="circle"
-        />
+        /> */}
         <area
           target=""
           alt="faq"
@@ -74,20 +73,20 @@ export function MenuModal() {
         />
         <area
           target=""
-          alt="tokenmics"
-          title="tokenmics"
-          href="/tokenmics"
+          alt="tokenomics"
+          title="tokenomics"
+          href="/tokenomics"
           coords="1114,284,83"
           shape="circle"
         />
-        <area
+        {/* <area
           target=""
           alt="news"
           title="news"
           href="/news"
           coords="327,619,83"
           shape="circle"
-        />
+        /> */}
         <area
           target=""
           alt="youtube"
@@ -104,33 +103,33 @@ export function MenuModal() {
           coords="718,593,69"
           shape="circle"
         />
-        <area
+        {/* <area
           target=""
           alt="platform"
           title="platform"
           href="/platform"
           coords="905,595,69"
           shape="circle"
-        />
-        <area
+        /> */}
+        {/* <area
           target=""
           alt="cityview"
           title="cityview"
           href="/cityview"
           coords="1109,620,84"
           shape="circle"
-        />
+        /> */}
       </map>
 
       <map name="image-map-mobile" className="flex sm:hidden">
-        <area
+        {/* <area
           target=""
           alt="governor"
           title="governor"
           href="/governor"
           coords="117,63,57"
           shape="circle"
-        />
+        /> */}
         <area
           target=""
           alt="faq"
@@ -157,20 +156,20 @@ export function MenuModal() {
         />
         <area
           target=""
-          alt="tokenmics"
-          title="tokenmics"
-          href="/tokenmics"
+          alt="tokenomics"
+          title="tokenomics"
+          href="/tokenomics"
           coords="350,63,57"
           shape="circle"
         />
-        <area
+        {/* <area
           target=""
           alt="news"
           title="news"
           href="/news"
           coords="117,163,57"
           shape="circle"
-        />
+        /> */}
         <area
           target=""
           alt="youtube"
@@ -187,22 +186,22 @@ export function MenuModal() {
           coords="220,163,47"
           shape="circle"
         />
-        <area
+        {/* <area
           target=""
           alt="platform"
           title="platform"
           href="/platform"
           coords="280,163,47"
           shape="circle"
-        />
-        <area
+        /> */}
+        {/* <area
           target=""
           alt="cityview"
           title="cityview"
           href="/cityview"
           coords="350,163,57"
           shape="circle"
-        />
+        /> */}
       </map>
     </div>
   );

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FramerMotionWrapper } from "@/app/shared/components/framerMotionWrapper/framerMotionWrapper";
+import { FramerMotionWrapper } from "@/app/shared/components/framer-motion-wrapper/framer-motion-wrapper";
 import arrowRight from "@/public/arrow-right.svg";
 
 type AccordionProps = {

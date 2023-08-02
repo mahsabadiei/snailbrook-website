@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MenuModal } from "@/app/shared/components/menuModal/menuModal";
+import MenuModal from "@/app/shared/components/menu-modal/menu-modal";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";

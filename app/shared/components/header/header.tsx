@@ -28,7 +28,7 @@ export default function Header({}: HeaderProps) {
             <Link href="/roadmap" className="font-medium text-white">
               <span>Roadmap</span>
             </Link>
-            <Link href="/tokenmics" className="font-medium text-white">
+            <Link href="/tokenomics" className="font-medium text-white">
               <span>Tokenomics</span>
             </Link>
             <Link href="/join" className="font-medium text-white">
