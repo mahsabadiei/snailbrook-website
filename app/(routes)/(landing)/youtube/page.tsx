@@ -10,13 +10,11 @@ type Props = {
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export default function Page({ searchParams }: Props) {
-  const showModal = searchParams?.modal;
-
+export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden">
       <article className="flex flex-col w-[260px] h-[461px] sm:w-[537px] sm:h-[410px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-30"></article>
-      {showModal && <MenuModal />}
+
       <Image
         src={cardBg}
         alt="card"

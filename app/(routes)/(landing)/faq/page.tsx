@@ -45,9 +45,7 @@ const faqList = [
   },
 ];
 
-export default function Page({ searchParams }: Props) {
-  const showModal = searchParams?.modal;
-
+export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-8 overflow-y-auto z-30">
@@ -69,7 +67,7 @@ export default function Page({ searchParams }: Props) {
           />
         ))}
       </article>
-      {showModal && <MenuModal />}
+
       <Image
         src={cardBg}
         alt="card"
