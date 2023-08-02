@@ -1,12 +1,15 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import elevatorBg from "@/public/elevator-bg.webp";
 
 export default function MenuModal() {
   const router = useRouter();
-  return (
+  const searchParams = useSearchParams();
+  const modal = searchParams.get("menu-modal");
+
+  return modal ? (
     <div
       className="flex items-center fixed z-50 inset-0 overflow-y-auto"
       id="menu-modal"
@@ -204,5 +207,5 @@ export default function MenuModal() {
         /> */}
       </map>
     </div>
-  );
+  ) : null;
 }
