@@ -1,16 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import MenuModal from "@/app/shared/components/menu-modal/menu-modal";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 import Accordion from "./accordion";
-
-type Props = {
-  params: {};
-  searchParams: { [key: string]: string | string[] | undefined };
-};
 
 const faqList = [
   {

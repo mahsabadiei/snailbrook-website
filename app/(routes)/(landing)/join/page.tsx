@@ -1,5 +1,4 @@
 import Image from "next/image";
-import MenuModal from "@/app/shared/components/menu-modal/menu-modal";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
@@ -12,11 +11,6 @@ import redditIcon from "@/public/reddit-icon.svg";
 import discordIcon from "@/public/discord-icon.svg";
 import youtubeIcon from "@/public/youtube-icon.svg";
 import gitbookIcon from "@/public/gitbook-icon.svg";
-
-type Props = {
-  params: {};
-  searchParams: { [key: string]: string | string[] | undefined };
-};
 
 export default function Page() {
   return (

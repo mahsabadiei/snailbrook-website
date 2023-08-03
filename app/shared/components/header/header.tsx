@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter, usePathname } from 'next/navigation'
+import { useRouter, usePathname } from "next/navigation";
 import logo from "@/public/snailbrook-logo.svg";
 import volumeHighIcon from "@/public/volume-high-icon.svg";
 import categoryIcon from "@/public/category-icon.svg";
@@ -21,7 +21,7 @@ export default function Header({}: HeaderProps) {
           <Image src={logo} alt="website logo" priority />
         </Link>
         {showNav ? (
-          <nav className="hidden lg:flex gap-8 px-6 py-4 relative rounded-[48px] bg-shadow-medium">
+          <nav className="hidden lg:flex gap-8 px-6 py-4 relative rounded-[48px] bg-gray-gradient-dark">
             <Link href="/about" className="font-medium text-white">
               <span>About</span>
             </Link>
@@ -40,18 +40,18 @@ export default function Header({}: HeaderProps) {
             <Link href="/" className="font-medium text-white">
               <span>Platform</span>
             </Link>
-            <div className="flex justify-center items-center p-1 absolute top-1 right-6 rounded-[48px] bg-shadow-medium-light">
+            <div className="flex justify-center items-center p-1 absolute top-1 right-6 rounded-[48px] bg-gray-gradient-normal">
               <span className="text-[8px] text-white">SOON</span>
             </div>
           </nav>
         ) : null}
         <div className="flex flex-row items-center gap-x-6">
-          <button className="hidden sm:flex sm:items-center sm:justify-center p-4 rounded-[48px] bg-shadow-medium">
+          <button className="hidden sm:flex sm:items-center sm:justify-center p-4 rounded-[48px] bg-gray-gradient-dark">
             <Image src={volumeHighIcon} alt="volumeHighIcon" priority />
           </button>
           <button
             onClick={() => router.push(`?menu-modal=true`)}
-            className="flex items-center justify-center p-4 rounded-[48px] bg-shadow-medium"
+            className="flex items-center justify-center p-4 rounded-[48px] bg-gray-gradient-dark"
           >
             <Image src={categoryIcon} alt="categoryIcon" priority />
           </button>
