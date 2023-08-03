@@ -8,11 +8,15 @@ import openIcon from "@/public/open-icon.svg";
 import copyIcon from "@/public/copy-icon.svg";
 import rocket from "@/public/rocket.webp";
 import balloon from "@/public/balloon.webp";
+import fire from "@/public/fire.webp";
+import key from "@/public/key.webp";
+import megaphone from "@/public/megaphone.webp";
+import coin from "@/public/coin.webp";
 
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-30">
+      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-20">
         <h2 className="text-sm font-medium text-white text-center">
           OUR TOKEN
         </h2>
@@ -112,14 +116,96 @@ export default function Page() {
                 </p>
               </div>
             </div>
+            <div className="flex flex-row items-start gap-7">
+              <Image
+                src={fire}
+                alt="fire"
+                className="object-contain"
+                width={64}
+                height={64}
+                sizes="100vw"
+                quality={100}
+              />
+              <div className="flex flex-col w-[263px] gap-4">
+                <h5 className="text-xl font-bold text-white">
+                  The Great Snail Burn
+                </h5>
+                <p className="text-sm font-normal text-white">
+                  The Great Snail Burn was initiated after the Airdrop,
+                  permanently removing 17.6% of the $SNAIL supply, demonstrating
+                  a strong commitment to a deflationary path.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-8">
+          <h2 className="text-4xl text-white">
+            Driving Utility, Delivering Value
+          </h2>
+          <div className="flex flex-col xl:flex-row gap-10">
+            <div className="flex flex-col items-start justify-center gap-6">
+              <Image
+                src={key}
+                alt="key"
+                className="object-contain"
+                width={64}
+                height={64}
+                sizes="100vw"
+                quality={100}
+              />
+              <h3 className="text-xl font-bold text-white">Tokenized Access</h3>
+              <p className="text-sm font-normal text-white">
+                {`Stake your SNAIL tokens and bam! You've got a VIP pass to an
+                array of premium features, advanced insights, and more.`}
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-6">
+              <Image
+                src={megaphone}
+                alt="megaphone"
+                className="object-contain"
+                width={64}
+                height={64}
+                sizes="100vw"
+                quality={100}
+              />
+              <h3 className="text-xl font-bold text-white">
+                Elevate Your Project
+              </h3>
+              <p className="text-sm font-normal text-white">
+                {`Verified project team? Time to shine! Manage your own page, post
+                updates in real-time, enjoy fast listing and extra ad pots for
+                that visibility boost.`}
+              </p>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-6">
+              <Image
+                src={coin}
+                alt="coin"
+                className="object-contain"
+                width={64}
+                height={64}
+                sizes="100vw"
+                quality={100}
+              />
+              <h3 className="text-xl font-bold text-white">Revenue Sharing</h3>
+              <p className="text-sm font-normal text-white">
+                {`Staking SNAIL tokens isn't just fun, it's rewarding too! Enjoy a
+                portion of the revenue from ads and team-created pages.`}
+              </p>
+            </div>
+          </div>
+          <button className="flex flex-row justify-center items-center px-12 py-5 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium">
+            <span className="text-xl font-medium text-white">Buy $SNAIL</span>
+          </button>
         </div>
       </article>
 
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1170px] h-auto absolute z-20"
+        className="hidden sm:flex w-[1170px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}
@@ -128,7 +214,7 @@ export default function Page() {
       <Image
         src={cardMobileBg}
         alt="card"
-        className="flex sm:hidden w-[582px] h-[536px] absolute z-20"
+        className="flex sm:hidden w-[582px] h-[536px] absolute z-10"
         placeholder="blur"
         priority
         quality={100}

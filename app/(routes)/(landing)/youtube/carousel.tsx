@@ -52,13 +52,13 @@ export default function Carousel({}: any) {
           onClick={handlePrevSlide}
           className="px-8 py-3 rounded-[14px] border border-gray-gradient-light bg-gray-gradient-medium"
         >
-          <Image src={prevIcon} alt="arrow" priority />
+          <Image src={prevIcon} alt="arrow" />
         </button>
         <button
           onClick={handleNextSlide}
           className="px-8 py-3 rounded-[14px] border border-gray-gradient-light bg-gray-gradient-medium"
         >
-          <Image src={nextIcon} alt="arrow" priority />
+          <Image src={nextIcon} alt="arrow" />
         </button>
       </div>
     </div>

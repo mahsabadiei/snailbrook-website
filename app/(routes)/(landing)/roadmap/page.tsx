@@ -8,7 +8,7 @@ import insideBg from "@/public/inside-bg.webp";
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-30">
+      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-20">
         <h2 className="text-sm font-medium text-white text-center">
           OUR ROADMAP
         </h2>
@@ -21,8 +21,8 @@ export default function Page() {
           expand SnailBrook, fostering innovation and collaboration among meme
           coin enthusiasts.
         </p>
-        <button className="flex border-box flex-row w-[149px] h-[46px] justify-center items-center px-9 py-2 xl:px-8 xl:py-3 mb-12 rounded-[48px] bg-gradient-to-r from-purple-light to-purple-medium">
-          <span className="text-xs font-medium text-white">Stay updated</span>
+        <button className="flex flex-row justify-center items-center px-12 py-5 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium">
+          <span className="text-xl font-medium text-white">Stay updated</span>
         </button>
 
         <div className="flex flex-col xl:flex-row flex-wrap w-[80%] items-center justify-between text-white">
@@ -34,13 +34,16 @@ export default function Page() {
           <div className="xl:w-[202px] h-0.5 hidden xl:inline-block mb-20 bg-blue-medium" />
           <div className="h-10 w-0.5 inline-block xl:hidden m-0 bg-blue-medium" />
           <Card />
+          <Card />
+          <div className="xl:w-[202px] h-0.5 hidden xl:inline-block mb-20 bg-blue-medium" />
+          <Card />
         </div>
       </article>
 
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1170px] h-auto absolute z-20"
+        className="hidden sm:flex w-[1170px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}
@@ -49,7 +52,7 @@ export default function Page() {
       <Image
         src={cardMobileBg}
         alt="card"
-        className="flex sm:hidden w-[582px] h-[536px] absolute z-20"
+        className="flex sm:hidden w-[582px] h-[536px] absolute z-10"
         placeholder="blur"
         priority
         quality={100}

@@ -15,7 +15,7 @@ export default function Header({}: HeaderProps) {
   const showNav = pathname === "/" ?? false;
 
   return (
-    <header className="w-full px-5 sm:px-16 py-6 fixed z-40">
+    <header className="w-full px-5 sm:px-16 py-6 fixed z-30">
       <div className="flex flex-row items-center justify-between gap-4">
         <Link href="/">
           <Image src={logo} alt="website logo" priority />
@@ -47,13 +47,13 @@ export default function Header({}: HeaderProps) {
         ) : null}
         <div className="flex flex-row items-center gap-x-6">
           <button className="hidden sm:flex sm:items-center sm:justify-center p-4 rounded-[48px] bg-gray-gradient-dark">
-            <Image src={volumeHighIcon} alt="volumeHighIcon" priority />
+            <Image src={volumeHighIcon} alt="volumeHighIcon" />
           </button>
           <button
             onClick={() => router.push(`?menu-modal=true`)}
             className="flex items-center justify-center p-4 rounded-[48px] bg-gray-gradient-dark"
           >
-            <Image src={categoryIcon} alt="categoryIcon" priority />
+            <Image src={categoryIcon} alt="categoryIcon" />
           </button>
         </div>
       </div>

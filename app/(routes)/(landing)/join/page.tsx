@@ -15,7 +15,7 @@ import gitbookIcon from "@/public/gitbook-icon.svg";
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-4 xl:gap-8 z-30">
+      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-4 xl:gap-8 z-20">
         <h1 className="text-3xl xl:text-[54px] font-bold xl:font-medium text-white text-center">
           Official Social Media
         </h1>
@@ -30,7 +30,6 @@ export default function Page() {
               src={twitterIcon}
               alt="twitterIcon"
               className="xl:w-12 xl:h-12"
-              priority
             />
           </button>
           <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
@@ -38,7 +37,6 @@ export default function Page() {
               src={telegramIcon}
               alt="telegramIcon"
               className="xl:w-12 xl:h-12"
-              priority
             />
           </button>
           <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
@@ -46,7 +44,6 @@ export default function Page() {
               src={mediumIcon}
               alt="mediumIcon"
               className="xl:w-12 xl:h-12"
-              priority
             />
           </button>
           <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
@@ -54,7 +51,6 @@ export default function Page() {
               src={tiktokIcon}
               alt="tiktokIcon"
               className="xl:w-12 xl:h-12"
-              priority
             />
           </button>
           <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
@@ -62,7 +58,6 @@ export default function Page() {
               src={redditIcon}
               alt="redditIcon"
               className="xl:w-12 xl:h-12"
-              priority
             />
           </button>
           <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
@@ -70,7 +65,6 @@ export default function Page() {
               src={discordIcon}
               alt="discordIcon"
               className="xl:w-12 xl:h-12"
-              priority
             />
           </button>
           <button className="flex items-center justify-center  w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
@@ -78,7 +72,6 @@ export default function Page() {
               src={youtubeIcon}
               alt="youtubeIcon"
               className="xl:w-12 xl:h-12"
-              priority
             />
           </button>
           <button className="flex items-center justify-center  w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
@@ -86,7 +79,6 @@ export default function Page() {
               src={gitbookIcon}
               alt="gitbookIcon"
               className="xl:w-12 xl:h-12"
-              priority
             />
           </button>
         </div>
@@ -95,7 +87,7 @@ export default function Page() {
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1170px] h-auto absolute z-20"
+        className="hidden sm:flex w-[1170px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}
@@ -104,7 +96,7 @@ export default function Page() {
       <Image
         src={cardMobileBg}
         alt="card"
-        className="flex sm:hidden w-[582px] h-[536px] absolute z-20"
+        className="flex sm:hidden w-[582px] h-[536px] absolute z-10"
         placeholder="blur"
         priority
         quality={100}

@@ -9,7 +9,7 @@ import Carousel from "./carousel";
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] gap-8 text-white z-30">
+      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] gap-8 text-white z-20">
         <h1 className="text-3xl xl:text-[54px] font-medium text-white text-center sm:text-start">
           Latest from YouTube
         </h1>
@@ -30,7 +30,7 @@ export default function Page() {
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1170px] h-auto absolute z-20"
+        className="hidden sm:flex w-[1170px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}
@@ -39,7 +39,7 @@ export default function Page() {
       <Image
         src={cardMobileBg}
         alt="card"
-        className="flex sm:hidden w-[582px] h-[536px] absolute z-20"
+        className="flex sm:hidden w-[582px] h-[536px] absolute z-10"
         placeholder="blur"
         priority
         quality={100}

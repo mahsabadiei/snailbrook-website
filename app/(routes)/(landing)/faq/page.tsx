@@ -42,7 +42,7 @@ const faqList = [
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-8 overflow-y-auto z-30">
+      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-8 overflow-y-auto z-20">
         <h1 className="text-3xl xl:text-5xl font-bold xl:font-medium text-white text-center">
           Frequently Asked Questions
         </h1>
@@ -65,7 +65,7 @@ export default function Page() {
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1170px] h-auto absolute z-20"
+        className="hidden sm:flex w-[1170px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}
@@ -74,7 +74,7 @@ export default function Page() {
       <Image
         src={cardMobileBg}
         alt="card"
-        className="flex sm:hidden w-[582px] h-[536px] absolute z-20"
+        className="flex sm:hidden w-[582px] h-[536px] absolute z-10"
         placeholder="blur"
         priority
         quality={100}

@@ -14,6 +14,7 @@ import youtubeIcon from "@/public/youtube-icon.svg";
 import gitbookIcon from "@/public/gitbook-icon.svg";
 import downloadIcon from "@/public/download-icon.svg";
 import purpleGradientBt from "@/public/purple-gradient-bt.svg";
+import glow from "@/public/glow.svg";
 
 export default function Hero() {
   return (
@@ -29,17 +30,18 @@ export default function Hero() {
             <Image src={utilityTowerBt} alt="utilityTowerBt" quality={100} />
           </button>
         </div>
-        <div className="flex flex-col h-[20vh] justify-end z-10">
-          <button>
+        <div className="flex flex-col items-center h-[20vh] justify-end z-10">
+          <button className="backdrop-blur-sm">
             <Image
               src={purpleGradientBt}
               alt="purpleGradientBt"
               quality={100}
             />
           </button>
+          <Image src={glow} alt="glow" quality={100} />
         </div>
         <div className="flex flex-row w-full h-[20vh] justify-center lg:justify-between px-5 sm:px-16 z-10">
-          <div className="hidden lg:flex flex-col h-[110px] gap-2 p-4 relative z-40 rounded-3xl bg-gray-gradient-dark border-2 border-blue-medium">
+          <div className="hidden lg:flex flex-col h-[110px] gap-2 p-4 relative rounded-3xl backdrop-blur bg-gray-gradient-dark border-2 border-blue-medium">
             <div className="flex items-center justify-center p-0.5 absolute top-[-12px] rounded-[14px] bg-gradient-to-r from-blue-light to-pink-light">
               <div className="rounded-[14px] bg-gray-light px-2 py-1">
                 <h1 className="text-white text-[8px]">NEW</h1>
@@ -57,28 +59,28 @@ export default function Hero() {
           </div>
           <div className="flex flex-row gap-x-4 sm:gap-x-6 items-center">
             <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
-              <Image src={twitterIcon} alt="twitterIcon" priority />
+              <Image src={twitterIcon} alt="twitterIcon" />
             </button>
             <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
-              <Image src={telegramIcon} alt="telegramIcon" priority />
+              <Image src={telegramIcon} alt="telegramIcon" />
             </button>
             <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
-              <Image src={mediumIcon} alt="mediumIcon" priority />
+              <Image src={mediumIcon} alt="mediumIcon" />
             </button>
             <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
-              <Image src={tiktokIcon} alt="tiktokIcon" priority />
+              <Image src={tiktokIcon} alt="tiktokIcon" />
             </button>
             <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
-              <Image src={redditIcon} alt="redditIcon" priority />
+              <Image src={redditIcon} alt="redditIcon" />
             </button>
             <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
-              <Image src={discordIcon} alt="discordIcon" priority />
+              <Image src={discordIcon} alt="discordIcon" />
             </button>
             <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
-              <Image src={youtubeIcon} alt="youtubeIcon" priority />
+              <Image src={youtubeIcon} alt="youtubeIcon" />
             </button>
             <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
-              <Image src={gitbookIcon} alt="gitbookIcon" priority />
+              <Image src={gitbookIcon} alt="gitbookIcon" />
             </button>
           </div>
         </div>
