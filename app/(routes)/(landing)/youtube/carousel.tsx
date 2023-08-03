@@ -25,7 +25,7 @@ export default function Carousel({}: any) {
 
   return (
     <div className="flex flex-col w-full gap-4">
-      <div className="flex flex-col sm:flex-row w-full justify-between items-center gap-4">
+      <div className="flex flex-col lg:flex-row w-full justify-between items-center gap-4">
         {/* <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -34,20 +34,22 @@ export default function Carousel({}: any) {
         {videos.map((video: any, index: number) => {
           if (index === currentSlide) {
             return (
-              <video
-                key={video.id}
-                src={video.src}
-                width="392"
-                height="163"
-                controls
-                className="animate-fadeIn"
-              />
+              <div key={video?.id} className="flex flex-col gap-2">
+                <video
+                  key={video.id}
+                  src={video.src}
+                  width="392"
+                  height="163"
+                  controls
+                />
+                <p className="text-[18px] font-bold text-white">video text</p>
+              </div>
             );
           }
         })}
         {/* </Swipe> */}
       </div>
-      <div className="flex flex-row items-center justify-center sm:justify-start gap-4">
+      <div className="flex flex-row items-center justify-center lg:justify-start gap-4">
         <button
           onClick={handlePrevSlide}
           className="px-8 py-3 rounded-[14px] border border-gray-gradient-light bg-gray-gradient-medium"

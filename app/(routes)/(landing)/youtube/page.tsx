@@ -9,17 +9,17 @@ import Carousel from "./carousel";
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] gap-8 text-white z-20">
-        <h1 className="text-3xl xl:text-[54px] font-medium text-white text-center sm:text-start">
+      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] gap-8 overflow-y-auto z-20">
+        <h1 className="text-3xl lg:text-5xl font-medium text-white text-center lg:text-start">
           Latest from YouTube
         </h1>
-        <div className="flex flex-row w-full items-center justify-center sm:justify-between">
-          <p className="hidden sm:block text-base xl:text-xl font-normal text-white">
+        <div className="flex flex-col lg:flex-row  w-full items-center justify-center lg:justify-between">
+          <p className="hidden lg:flex text-base lg:text-xl font-normal text-white">
             Grab a front row seat to witness the epicness unfold, and
             <br /> join Finn on thrilling adventures by subscribing to our
             <br /> YouTube channel.
           </p>
-          <button className="flex flex-row gap-3 justify-center items-center px-10 py-5 xl:px-11 xl:py-4 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium">
+          <button className="flex flex-row justify-center items-center gap-3 px-10 py-5 lg:px-11 lg:py-4 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium">
             <Image src={playIcon} alt="play" />
             <span className="text-sm font-medium text-white">Subscribe</span>
           </button>
@@ -30,7 +30,7 @@ export default function Page() {
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1170px] h-auto absolute z-10"
+        className="hidden sm:flex w-[1100px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}

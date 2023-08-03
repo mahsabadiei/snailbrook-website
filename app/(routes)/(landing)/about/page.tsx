@@ -8,14 +8,14 @@ import telegramIcon from "@/public/telegram-icon.svg";
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-8 xl:gap-[56px] text-white z-20">
-        <h1 className="text-3xl xl:text-[54px] font-bold">Utopia For All</h1>
+      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] lg:w-[891px] lg:h-[391px] items-center justify-center gap-8 lg:gap-[56px] text-white z-20">
+        <h1 className="text-3xl lg:text-[54px] font-bold">Utopia For All</h1>
         <span>
-          <p className="text-base xl:text-xl mb-4 xl:mb-7">
+          <p className="text-base lg:text-xl mb-4 xl:mb-7 text-center">
             SnailBrook marks the beginning of a new age of community-owned,
             community-driven, and community-ocused crypto.
           </p>
-          <p className="text-base xl:text-xl">
+          <p className="text-base lg:text-xl text-center">
             Join the decentralized meme coin project that aims to create the
             ultimate cult community by uniting all meme coins for a common
             cause.
@@ -30,7 +30,7 @@ export default function Page() {
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1170px] h-auto absolute z-10"
+        className="hidden sm:flex w-[1100px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}

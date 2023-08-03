@@ -16,19 +16,19 @@ import coin from "@/public/coin.webp";
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] xl:w-[937px] xl:h-[510px] items-center gap-4 xl:gap-[56px] overflow-y-auto z-20">
+      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center gap-4 lg:gap-[56px] overflow-y-auto z-20">
         <h2 className="text-sm font-medium text-white text-center">
           OUR TOKEN
         </h2>
-        <h1 className="text-3xl xl:text-[56px] font-bold text-white text-center">
+        <h1 className="text-3xl lg:text-[54px] font-bold text-white text-center">
           $SNAIL Tokenomics
         </h1>
-        <p className="text-sm xl:text-base font-medium text-white  text-center">
+        <p className="text-sm lg:text-base font-medium text-white  text-center">
           The SnailBrook tokenomics have been carefully designed to promote
           equitable distribution, long-term sustainability, and community
           growth.
         </p>
-        <div className="flex flex-col xl:flex-row w-full gap-9">
+        <div className="flex flex-col lg:flex-row w-full gap-9">
           <div className="flex flex-col items-center xl:items-start gap-8">
             <div className="flex flex-col w-full items-start justify-center gap-4 px-6 py-10 rounded-[14px] border-2 border-blue-medium">
               <h4 className="text-sm font-semibold text-white">
@@ -205,7 +205,7 @@ export default function Page() {
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1170px] h-auto absolute z-10"
+        className="hidden sm:flex w-[1100px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}

@@ -18,7 +18,7 @@ const Accordion = ({ question, answer }: AccordionProps) => {
     <FramerMotionWrapper>
       <motion.div
         key="question"
-        className="flex flex-col w-[260px] xl:w-[691px] items-start justify-center p-6 rounded-[14px] border-2 border-blue-medium"
+        className="flex flex-col w-[260px] lg:w-[691px] items-start justify-center p-6 rounded-[14px] border-2 border-blue-medium"
         onClick={() => setIsOpen(!isOpen)}
       >
         <motion.div className="flex flex-row w-full justify-between">

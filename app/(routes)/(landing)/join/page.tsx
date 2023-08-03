@@ -15,16 +15,16 @@ import gitbookIcon from "@/public/gitbook-icon.svg";
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] xl:w-[891px] xl:h-[391px] items-center gap-4 xl:gap-8 z-20">
-        <h1 className="text-3xl xl:text-[54px] font-bold xl:font-medium text-white text-center">
+      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] lg:w-[891px] lg:h-[391px] items-center justify-center gap-4 lg:gap-8 z-20">
+        <h1 className="text-3xl lg:text-[54px] font-bold xl:font-medium text-white text-center">
           Official Social Media
         </h1>
-        <p className="text-sm xl:text-xl text-white text-center mb-4 xl:mb-7">
+        <p className="text-sm lg:text-xl text-white text-center mb-4 xl:mb-7">
           Our Telegram group and Twitter account are the best places to stay
           updated on the latest SnailBrook City news and connect with fellow
           community members.
         </p>
-        <div className="flex flex-row flex-wrap items-center justify-center gap-8 xl:gap-11">
+        <div className="flex flex-row flex-wrap items-center justify-center gap-8 lg:gap-11">
           <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl border-2 border-blue-light">
             <Image
               src={twitterIcon}
@@ -87,7 +87,7 @@ export default function Page() {
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1170px] h-auto absolute z-10"
+        className="hidden sm:flex w-[1100px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}
