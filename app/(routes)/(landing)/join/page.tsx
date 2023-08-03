@@ -87,7 +87,7 @@ export default function Page() {
       <Image
         src={cardBg}
         alt="card"
-        className="hidden sm:flex w-[1100px] h-auto absolute z-10"
+        className="hidden sm:flex w-[1080px] h-auto absolute z-10"
         placeholder="blur"
         priority
         quality={100}
