@@ -3,6 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import elevatorBg from "@/public/elevator-bg.webp";
+import elevatorMobileBg from "@/public/elevator-mobile-bg.webp";
 import closeIcon from "@/public/close-icon.svg";
 
 export default function MenuModal() {
@@ -31,17 +32,19 @@ export default function MenuModal() {
       <Image
         src={elevatorBg}
         alt="elevator"
-        className="hidden sm:flex min-w-[1440px] h-[900px] absolute"
+        className="hidden md:flex"
         placeholder="blur"
         priority
         quality={100}
         sizes="100vw"
         useMap="#image-map"
+        fill
       />
       <Image
-        src={elevatorBg}
+        src={elevatorMobileBg}
         alt="elevator"
-        className="flex sm:hidden min-w-[374px] h-[275px] absolute"
+        className="flex md:hidden"
+        fill
         placeholder="blur"
         priority
         quality={100}
