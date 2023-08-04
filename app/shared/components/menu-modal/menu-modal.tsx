@@ -23,10 +23,13 @@ export default function MenuModal() {
         className="fixed inset-0 bg-gray-light bg-opacity-75 transition-opacity"
         aria-hidden="true"
       />
-      <h1 className="text-4xl sm:text-[66px] font-semibold text-white absolute top-10 drop-shadow-sm z-40">
+      <h1 className="text-xl sm:text-[66px] font-semibold text-white absolute top-4 sm:top-10 drop-shadow-sm z-40">
         Select Floor
       </h1>
-      <button onClick={() => router.back()} className="absolute bottom-10 z-40">
+      <button
+        onClick={() => router.back()}
+        className="absolute bottom-2 sm:bottom-10 z-40"
+      >
         <Image src={closeIcon} alt="close" />
       </button>
       <Image
@@ -134,13 +137,13 @@ export default function MenuModal() {
         />
       </map>
 
-      <map name="image-map-mobile" className="flex sm:hidden">
+      <map name="image-map-mobile" className="flex md:hidden">
         {/* <area
           target=""
           alt="governor"
           title="governor"
           href="/governor"
-          coords="117,63,57"
+          coords="131,143,47"
           shape="circle"
         /> */}
         <area
@@ -148,7 +151,7 @@ export default function MenuModal() {
           alt="faq"
           title="faq"
           href="/faq"
-          coords="151,63,46"
+          coords="131,243,47"
           shape="circle"
         />
         <area
@@ -156,7 +159,7 @@ export default function MenuModal() {
           alt="about"
           title="about"
           href="/about"
-          coords="220,63,46"
+          coords="131,343,47"
           shape="circle"
         />
         <area
@@ -164,7 +167,7 @@ export default function MenuModal() {
           alt="roadmap"
           title="roadmap"
           href="/roadmap"
-          coords="280,63,46"
+          coords="131,443,47"
           shape="circle"
         />
         <area
@@ -172,7 +175,7 @@ export default function MenuModal() {
           alt="tokenomics"
           title="tokenomics"
           href="/tokenomics"
-          coords="350,63,57"
+          coords="131,543,47"
           shape="circle"
         />
         {/* <area
@@ -180,7 +183,7 @@ export default function MenuModal() {
           alt="news"
           title="news"
           href="/news"
-          coords="117,163,57"
+          coords="117,143,47"
           shape="circle"
         /> */}
         <area
@@ -188,7 +191,7 @@ export default function MenuModal() {
           alt="youtube"
           title="youtube"
           href="/youtube"
-          coords="151,163,47"
+          coords="251,243,47"
           shape="circle"
         />
         <area
@@ -196,7 +199,7 @@ export default function MenuModal() {
           alt="join"
           title="join"
           href="/join"
-          coords="220,163,47"
+          coords="251,343,47"
           shape="circle"
         />
         {/* <area
@@ -204,17 +207,17 @@ export default function MenuModal() {
           alt="platform"
           title="platform"
           href="/platform"
-          coords="280,163,47"
+          coords="251,443,47"
           shape="circle"
         /> */}
-        {/* <area
+        <area
           target=""
           alt="cityview"
           title="cityview"
-          href="/cityview"
-          coords="350,163,57"
+          href="/"
+          coords="251,543,47"
           shape="circle"
-        /> */}
+        />
       </map>
     </div>
   ) : null;

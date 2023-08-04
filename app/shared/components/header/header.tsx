@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
-import logo from "@/public/snailbrook-logo.svg";
+import logo from "@/public/snailbrook-logo.webp";
 import volumeHighIcon from "@/public/volume-high-icon.svg";
 import categoryIcon from "@/public/category-icon.svg";
 
@@ -18,7 +18,13 @@ export default function Header({}: HeaderProps) {
     <header className="w-full px-5 sm:px-16 py-6 fixed z-30">
       <div className="flex flex-row items-center justify-between gap-4">
         <Link href="/">
-          <Image src={logo} alt="website logo" priority />
+          <Image
+            src={logo}
+            alt="website logo"
+            width={164}
+            height={44}
+            priority
+          />
         </Link>
         {showNav ? (
           <nav className="hidden lg:flex gap-8 px-6 py-4 relative rounded-[48px] bg-gray-gradient-dark">
