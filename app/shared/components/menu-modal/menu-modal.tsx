@@ -37,11 +37,11 @@ export default function MenuModal() {
         alt="elevator"
         className="hidden md:flex"
         placeholder="blur"
+        fill
         priority
         quality={100}
         sizes="100vw"
         useMap="#image-map"
-        fill
       />
       <Image
         src={elevatorMobileBg}

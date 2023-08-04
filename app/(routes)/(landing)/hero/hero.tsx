@@ -30,10 +30,8 @@ export default function Hero() {
           </button>
         </div>
         <div className="flex flex-col items-center h-[20vh] justify-end z-10">
-          <button className="rounded-3xl backdrop-blur-sm gradinetBorderWithTransparentBg gradinetBorderBlueToPink bg-gradient-to-r from-purple-gradiant-light to-purple-gradiant-medium">
-            <span className="flex justify-center items-center w-[222px] h-[66px] px-8 py-4 rounded-3xl">
-              <p className="text-[27px] font-bold text-white">Buy $SNAIL</p>
-            </span>
+          <button className="flex justify-center items-center w-[222px] h-[66px] px-6 sm:px-8 py-4 rounded-3xl backdrop-blur-sm gradinetBorderWithTransparentBg gradinetBorderBlueToPink bg-gradient-to-r from-purple-gradiant-light to-purple-gradiant-medium">
+            <p className="text-[27px] font-bold text-white">Buy $SNAIL</p>
           </button>
           <Image src={glow} alt="glow" quality={100} />
         </div>

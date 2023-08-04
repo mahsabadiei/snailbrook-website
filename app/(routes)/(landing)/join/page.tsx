@@ -15,8 +15,8 @@ import gitbookIcon from "@/public/gitbook-icon.svg";
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center justify-center gap-4 lg:gap-8 z-20">
-        <h1 className="text-3xl lg:text-[54px] font-bold xl:font-medium text-white text-center">
+      <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center justify-center gap-4 lg:gap-8 z-20">
+        <h1 className="text-3xl lg:text-[54px] font-bold xl:font-medium lg:leading-[68px] text-white text-center">
           Official Social Media
         </h1>
         <p className="text-sm lg:text-xl text-white text-center">

@@ -16,11 +16,11 @@ import coin from "@/public/coin.webp";
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[441px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center gap-4 lg:gap-[56px] overflow-y-auto z-20">
+      <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center gap-4 overflow-y-auto z-20">
         <h2 className="text-sm font-medium text-white text-center">
           OUR TOKEN
         </h2>
-        <h1 className="text-3xl lg:text-[54px] font-bold text-white text-center">
+        <h1 className="text-3xl lg:text-[54px] font-bold lg:leading-[68px] text-white text-center">
           $SNAIL Tokenomics
         </h1>
         <p className="text-sm lg:text-base font-medium text-white  text-center">
@@ -28,7 +28,7 @@ export default function Page() {
           equitable distribution, long-term sustainability, and community
           growth.
         </p>
-        <div className="flex flex-col lg:flex-row w-full gap-9">
+        <div className="flex flex-col lg:flex-row w-full gap-9 mt-4">
           <div className="flex flex-col items-center xl:items-start gap-8">
             <div className="flex flex-col w-full items-start justify-center gap-4 px-6 py-10 rounded-[14px] bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderGreenToPink">
               <h4 className="text-sm font-semibold text-white">
@@ -78,7 +78,7 @@ export default function Page() {
             </div>
           </div>
           <div className="flex flex-col items-center xl:items-start gap-12">
-            <div className="flex flex-row items-start gap-7">
+            <div className="flex flex-col sm:flex-row items-start gap-7">
               <div className="p-2 rounded-2xl bg-gray-gradient-normal">
                 <Image
                   src={rocket}
@@ -99,7 +99,7 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-start gap-7">
+            <div className="flex flex-col sm:flex-row items-start gap-7">
               <div className="p-2 rounded-2xl bg-gray-gradient-normal">
                 <Image
                   src={balloon}
@@ -120,7 +120,7 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-start gap-7">
+            <div className="flex flex-col sm:flex-row items-start gap-7">
               <div className="p-2 rounded-2xl bg-gray-gradient-normal">
                 <Image
                   src={fire}
@@ -145,7 +145,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center gap-8">
+        <div className="flex flex-col items-center justify-center gap-8 mt-4">
           <h2 className="text-4xl text-white">
             Driving Utility, Delivering Value
           </h2>
@@ -202,7 +202,7 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <button className="flex flex-row justify-center items-center px-12 py-5 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium">
+          <button className="flex flex-row justify-center items-center px-8 py-3 lg:px-12 lg:py-5 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium">
             <span className="text-xl font-medium text-white">Buy $SNAIL</span>
           </button>
         </div>
