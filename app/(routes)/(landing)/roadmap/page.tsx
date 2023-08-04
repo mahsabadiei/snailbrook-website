@@ -38,7 +38,7 @@ export default function Page() {
           <Image
             src={snail}
             alt="snail"
-            className="absolute top-[320px] right-[380px] z-50"
+            className="hidden lg:block absolute top-[320px] right-[380px] z-50"
           />
           <div className="flex flex-col-reverse lg:flex-row w-[80%] items-center justify-between">
             <Card circlePosition="right" circleNumber="4" />
