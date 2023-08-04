@@ -30,7 +30,7 @@ export default function Page() {
         </p>
         <div className="flex flex-col lg:flex-row w-full gap-9">
           <div className="flex flex-col items-center xl:items-start gap-8">
-            <div className="flex flex-col w-full items-start justify-center gap-4 px-6 py-10 rounded-[14px] border-2 border-blue-medium">
+            <div className="flex flex-col w-full items-start justify-center gap-4 px-6 py-10 rounded-[14px] bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderGreenToPink">
               <h4 className="text-sm font-semibold text-white">
                 TOTAL SUPPLY ($SNAIL)
               </h4>
@@ -41,14 +41,14 @@ export default function Page() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href=""
-                className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg border border-blue-light"
+                className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg bg-gray-gradient-normal"
               >
                 <span className="text-sm font-medium text-white">DEXTOOLS</span>
                 <Image src={openIcon} alt="open" />
               </Link>
               <Link
                 href=""
-                className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg border border-blue-light"
+                className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg bg-gray-gradient-normal"
               >
                 <span className="text-sm font-medium text-white">
                   Etherscan
@@ -57,7 +57,7 @@ export default function Page() {
               </Link>
               <Link
                 href=""
-                className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg border border-blue-light"
+                className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg bg-gray-gradient-normal"
               >
                 <span className="text-sm font-medium text-white">
                   COINGECKO
@@ -79,15 +79,17 @@ export default function Page() {
           </div>
           <div className="flex flex-col items-center xl:items-start gap-12">
             <div className="flex flex-row items-start gap-7">
-              <Image
-                src={rocket}
-                alt="rocket"
-                className="object-contain"
-                width={64}
-                height={64}
-                sizes="100vw"
-                quality={100}
-              />
+              <div className="p-2 rounded-2xl bg-gray-gradient-normal">
+                <Image
+                  src={rocket}
+                  alt="rocket"
+                  className="object-contain "
+                  width={64}
+                  height={64}
+                  sizes="100vw"
+                  quality={100}
+                />
+              </div>
               <div className="flex flex-col w-[263px] gap-4">
                 <h5 className="text-xl font-bold text-white">Fair Launch</h5>
                 <p className="text-sm font-normal text-white">
@@ -98,15 +100,17 @@ export default function Page() {
               </div>
             </div>
             <div className="flex flex-row items-start gap-7">
-              <Image
-                src={balloon}
-                alt="balloon"
-                className="object-contain"
-                width={64}
-                height={64}
-                sizes="100vw"
-                quality={100}
-              />
+              <div className="p-2 rounded-2xl bg-gray-gradient-normal">
+                <Image
+                  src={balloon}
+                  alt="balloon"
+                  className="object-contain"
+                  width={64}
+                  height={64}
+                  sizes="100vw"
+                  quality={100}
+                />
+              </div>
               <div className="flex flex-col w-[263px] gap-4">
                 <h5 className="text-xl font-bold text-white">Airdrop</h5>
                 <p className="text-sm font-normal text-white">
@@ -117,15 +121,17 @@ export default function Page() {
               </div>
             </div>
             <div className="flex flex-row items-start gap-7">
-              <Image
-                src={fire}
-                alt="fire"
-                className="object-contain"
-                width={64}
-                height={64}
-                sizes="100vw"
-                quality={100}
-              />
+              <div className="p-2 rounded-2xl bg-gray-gradient-normal">
+                <Image
+                  src={fire}
+                  alt="fire"
+                  className="object-contain"
+                  width={64}
+                  height={64}
+                  sizes="100vw"
+                  quality={100}
+                />
+              </div>
               <div className="flex flex-col w-[263px] gap-4">
                 <h5 className="text-xl font-bold text-white">
                   The Great Snail Burn
@@ -144,11 +150,11 @@ export default function Page() {
             Driving Utility, Delivering Value
           </h2>
           <div className="flex flex-col xl:flex-row gap-10">
-            <div className="flex flex-col items-start justify-center gap-6">
+            <div className="flex flex-col w-[245px] items-start justify-center gap-6 p-6 rounded-2xl bg-gray-gradient-normal">
               <Image
                 src={key}
                 alt="key"
-                className="object-contain"
+                className="object-contain p-2 rounded-2xl bg-gray-gradient-normal"
                 width={64}
                 height={64}
                 sizes="100vw"
@@ -160,11 +166,11 @@ export default function Page() {
                 array of premium features, advanced insights, and more.`}
               </p>
             </div>
-            <div className="flex flex-col items-start justify-center gap-6">
+            <div className="flex flex-col w-[245px] items-start justify-center gap-6 p-6 rounded-2xl bg-gray-gradient-normal">
               <Image
                 src={megaphone}
                 alt="megaphone"
-                className="object-contain"
+                className="object-contain p-2 rounded-2xl bg-gray-gradient-normal"
                 width={64}
                 height={64}
                 sizes="100vw"
@@ -179,11 +185,11 @@ export default function Page() {
                 that visibility boost.`}
               </p>
             </div>
-            <div className="flex flex-col items-start justify-center gap-6">
+            <div className="flex flex-col w-[245px] items-start justify-center gap-6 p-6 rounded-2xl bg-gray-gradient-normal">
               <Image
                 src={coin}
                 alt="coin"
-                className="object-contain"
+                className="object-contain p-2 rounded-2xl bg-gray-gradient-normal"
                 width={64}
                 height={64}
                 sizes="100vw"

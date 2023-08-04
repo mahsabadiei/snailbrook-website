@@ -18,7 +18,7 @@ const Accordion = ({ question, answer }: AccordionProps) => {
     <FramerMotionWrapper>
       <motion.div
         key="question"
-        className="flex flex-col w-[260px] lg:w-[691px] items-start justify-center p-6 rounded-[14px] border-2 border-blue-medium"
+        className="flex flex-col w-[260px] lg:w-[691px] items-start justify-center p-6 rounded-[14px] bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderGreenToPink "
         onClick={() => setIsOpen(!isOpen)}
       >
         <motion.div className="flex flex-row w-full justify-between">
@@ -33,7 +33,7 @@ const Accordion = ({ question, answer }: AccordionProps) => {
         </motion.div>
         {isOpen && (
           <motion.div
-            className="flex flex-row"
+            className="flex flex-col w-full"
             key="answer"
             initial="collapsed"
             animate="open"
@@ -44,6 +44,7 @@ const Accordion = ({ question, answer }: AccordionProps) => {
             }}
             transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
           >
+            <div className="w-full h-px mt-4  bg-gradient-to-r from-green-light to-pink-light" />
             <motion.p className="text-xl font-bold text-white mt-4">
               {answer}
             </motion.p>

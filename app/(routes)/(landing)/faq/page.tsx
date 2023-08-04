@@ -42,8 +42,8 @@ const faqList = [
 export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] lg:w-[891px] lg:h-[391px] items-center gap-8 overflow-y-auto z-20">
-        <h1 className="text-3xl lg:text-5xl font-bold xl:font-medium text-white text-center">
+      <article className="flex flex-col w-[260px] h-[419px] sm:w-[491px] sm:h-[291px] lg:w-[891px] lg:h-[391px] items-center gap-10 overflow-y-auto z-20">
+        <h1 className="text-3xl lg:text-5xl font-bold xl:font-medium text-white text-center mb-2">
           Frequently Asked Questions
         </h1>
         <p className="text-xl text-white text-center">

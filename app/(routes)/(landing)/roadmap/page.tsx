@@ -27,15 +27,15 @@ export default function Page() {
 
         <div className="flex flex-col xl:flex-row flex-wrap w-[80%] items-center justify-between text-white">
           <Card />
-          <div className="xl:w-[130px] h-0.5 hidden xl:inline-block mb-20 bg-blue-medium" />
-          <div className="h-10 w-0.5 inline-block xl:hidden m-0 bg-blue-medium" />
+          <div className="xl:w-[130px] h-0.5 hidden xl:inline-block mb-20 bg-green-light" />
+          <div className="h-10 w-0.5 inline-block xl:hidden m-0 bg-green-light" />
           <Card />
           <Card />
-          <div className="xl:w-[130px] h-0.5 hidden xl:inline-block mb-20 bg-blue-medium" />
-          <div className="h-10 w-0.5 inline-block xl:hidden m-0 bg-blue-medium" />
+          <div className="xl:w-[130px] h-0.5 hidden xl:inline-block mb-20 bg-green-light" />
+          <div className="h-10 w-0.5 inline-block xl:hidden m-0 bg-green-light" />
           <Card />
           <Card />
-          <div className="xl:w-[130px] h-0.5 hidden xl:inline-block mb-20 bg-blue-medium" />
+          <div className="xl:w-[130px] h-0.5 hidden xl:inline-block mb-20 bg-green-light" />
           <Card />
         </div>
       </article>

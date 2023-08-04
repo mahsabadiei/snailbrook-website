@@ -13,7 +13,6 @@ import discordIcon from "@/public/discord-icon.svg";
 import youtubeIcon from "@/public/youtube-icon.svg";
 import gitbookIcon from "@/public/gitbook-icon.svg";
 import downloadIcon from "@/public/download-icon.svg";
-import purpleGradientBt from "@/public/purple-gradient-bt.svg";
 import glow from "@/public/glow.svg";
 
 export default function Hero() {
@@ -31,12 +30,10 @@ export default function Hero() {
           </button>
         </div>
         <div className="flex flex-col items-center h-[20vh] justify-end z-10">
-          <button className="backdrop-blur-sm">
-            <Image
-              src={purpleGradientBt}
-              alt="purpleGradientBt"
-              quality={100}
-            />
+          <button className="rounded-3xl backdrop-blur-sm gradinetBorderWithTransparentBg gradinetBorderBlueToPink bg-gradient-to-r from-purple-gradiant-light to-purple-gradiant-medium">
+            <span className="flex justify-center items-center w-[222px] h-[66px] px-8 py-4 rounded-3xl">
+              <p className="text-[27px] font-bold text-white">Buy $SNAIL</p>
+            </span>
           </button>
           <Image src={glow} alt="glow" quality={100} />
         </div>
