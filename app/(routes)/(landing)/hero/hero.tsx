@@ -1,6 +1,7 @@
 import Image from "next/image";
 import islandBg from "@/public/island-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
+import nightBg from "@/public/night-bg.webp";
 import sunsetBg from "@/public/sunset-bg.svg";
 import enterTowerBt from "@/public/enter-tower-bt.svg";
 import utilityTowerBt from "@/public/utility-tower-bt.svg";
@@ -93,21 +94,24 @@ export default function Hero() {
       <Image
         src={sunsetBg}
         alt="sunsetBg"
-        className="object-cover -z-10"
+        className="dark:hidden object-cover -z-10"
         quality={100}
         fill
         sizes="100vw"
       />
-      <Image
-        src={cloudsBg}
-        alt="cloudsBg"
-        className="object-cover -z-10 "
-        placeholder="blur"
-        priority
-        quality={100}
-        fill
-        sizes="100vw"
-      />
+      <picture>
+        <source srcSet={nightBg.src} media="(prefers-color-scheme: dark)" />
+        <Image
+          src={cloudsBg}
+          alt="cloudsBg"
+          className="object-cover -z-10 "
+          placeholder="blur"
+          priority
+          quality={100}
+          fill
+          sizes="100vw"
+        />
+      </picture>
     </section>
   );
 }

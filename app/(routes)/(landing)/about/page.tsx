@@ -2,6 +2,7 @@ import Image from "next/image";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
+import nightBg from "@/public/night-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 import telegramIcon from "@/public/telegram-icon.svg";
 
@@ -9,7 +10,9 @@ export default function Page() {
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center justify-center gap-8 lg:gap-[56px] text-white z-20">
-        <h1 className="text-3xl lg:text-[54px] font-bold lg:leading-[68px]">Utopia For All</h1>
+        <h1 className="text-3xl lg:text-[54px] font-bold lg:leading-[68px]">
+          Utopia For All
+        </h1>
         <span>
           <p className="text-base lg:text-xl mb-4 xl:mb-7 text-center">
             SnailBrook marks the beginning of a new age of community-owned,
@@ -55,16 +58,19 @@ export default function Page() {
         fill
         sizes="100vw"
       />
-      <Image
-        src={cloudsBg}
-        alt="cloudsBg"
-        className="object-cover -z-10"
-        placeholder="blur"
-        priority
-        quality={100}
-        fill
-        sizes="100vw"
-      />
+      <picture>
+        <source srcSet={nightBg.src} media="(prefers-color-scheme: dark)" />
+        <Image
+          src={cloudsBg}
+          alt="cloudsBg"
+          className="object-cover -z-10 "
+          placeholder="blur"
+          priority
+          quality={100}
+          fill
+          sizes="100vw"
+        />
+      </picture>
     </section>
   );
 }

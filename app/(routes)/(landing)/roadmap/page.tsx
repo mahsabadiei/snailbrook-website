@@ -3,6 +3,7 @@ import Card from "./card";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
+import nightBg from "@/public/night-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 import snail from "@/public/snail.webp";
 
@@ -85,16 +86,19 @@ export default function Page() {
         fill
         sizes="100vw"
       />
-      <Image
-        src={cloudsBg}
-        alt="cloudsBg"
-        className="object-cover -z-10"
-        placeholder="blur"
-        priority
-        quality={100}
-        fill
-        sizes="100vw"
-      />
+      <picture>
+        <source srcSet={nightBg.src} media="(prefers-color-scheme: dark)" />
+        <Image
+          src={cloudsBg}
+          alt="cloudsBg"
+          className="object-cover -z-10 "
+          placeholder="blur"
+          priority
+          quality={100}
+          fill
+          sizes="100vw"
+        />
+      </picture>
     </section>
   );
 }
