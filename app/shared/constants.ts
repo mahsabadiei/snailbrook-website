@@ -18,3 +18,4 @@ export const ETHERSCAN =
 export const COINGECKO = "https://www.coingecko.com/en/coins/snailbrook";
 export const SUBSCRIBE = "https://www.youtube.com/@SNAILBROOK";
 export const TOKEN = "0x6bc40d4099f9057b23af309c08d935b890d7adc0";
+export const GOVFINNTWITTER = "https://twitter.com/govfinn";
