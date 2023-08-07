@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import islandBg from "@/public/island-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import nightBg from "@/public/night-bg.webp";
@@ -31,53 +32,103 @@ export default function Hero() {
           </button>
         </div>
         <div className="flex flex-col items-center h-[20vh] justify-end z-10">
-          <button className="flex justify-center items-center w-[222px] h-[66px] px-6 sm:px-8 py-4 rounded-3xl backdrop-blur-sm gradinetBorderWithTransparentBg gradinetBorderBlueToPink bg-gradient-to-r from-purple-gradiant-light to-purple-gradiant-medium">
+          <Link
+            href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x6bc40d4099f9057b23af309c08d935b890d7adc0&chain=mainnet"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex justify-center items-center w-[222px] h-[66px] px-6 sm:px-8 py-4 rounded-3xl backdrop-blur-sm gradinetBorderWithTransparentBg gradinetBorderBlueToPink bg-gradient-to-r from-purple-gradiant-light to-purple-gradiant-medium"
+          >
             <p className="text-[27px] font-bold text-white">Buy $SNAIL</p>
-          </button>
+          </Link>
           <Image src={glow} alt="glow" quality={100} />
         </div>
         <div className="flex flex-row w-full h-[20vh] justify-center lg:justify-between px-5 sm:px-16 z-10">
           <div className="hidden lg:flex flex-col h-[110px] gap-2 p-4 relative rounded-3xl backdrop-blur bg-gray-gradient-dark border-2 border-blue-medium">
             <div className="flex items-center justify-center p-0.5 absolute top-[-12px] rounded-[14px] bg-gradient-to-r from-blue-light to-pink-light">
-              <div className="rounded-[14px] bg-gray-light px-2 py-1">
+              <div className="rounded-[14px] px-2 py-1 bg-gray-light dark:bg-gray-dark">
                 <h1 className="text-white text-[8px]">NEW</h1>
               </div>
             </div>
             <h1 className="text-sm font-normal text-white">
               The Snailbrook Litepaper is out.
             </h1>
-            <button className="flex flex-row gap-3 justify-center items-center px-12 py-3 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium">
+            <Link
+              href="https://uploads-ssl.webflow.com/646759c55a25df70a3bdeb83/64a3121f5aae2322e980d86e_Snailbrook%20Litepaper%20v0.1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row gap-3 justify-center items-center px-12 py-3 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium"
+            >
               <Image src={downloadIcon} alt="download" />
               <span className="text-xs font-medium text-white">
                 Download now
               </span>
-            </button>
+            </Link>
           </div>
           <div className="flex flex-row gap-x-4 sm:gap-x-6 items-center">
-            <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
+            <Link
+              href="https://twitter.com/SnailBrookAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
+            >
               <Image src={twitterIcon} alt="twitterIcon" />
-            </button>
-            <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
+            </Link>
+            <Link
+              href="https://t.me/SnailBrook_Ann"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
+            >
               <Image src={telegramIcon} alt="telegramIcon" />
-            </button>
-            <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
+            </Link>
+            <Link
+              href="https://medium.com/@SnailBrook"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
+            >
               <Image src={mediumIcon} alt="mediumIcon" />
-            </button>
-            <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
+            </Link>
+            <Link
+              href="https://www.tiktok.com/@snailbrookai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
+            >
               <Image src={tiktokIcon} alt="tiktokIcon" />
-            </button>
-            <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
+            </Link>
+            <Link
+              href="https://www.reddit.com/r/SNaiLBROOKAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
+            >
               <Image src={redditIcon} alt="redditIcon" />
-            </button>
-            <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
+            </Link>
+            <Link
+              href="https://discord.io/SnailBrook"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
+            >
               <Image src={discordIcon} alt="discordIcon" />
-            </button>
-            <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
+            </Link>
+            <Link
+              href="https://www.youtube.com/@SNAILBROOK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
+            >
               <Image src={youtubeIcon} alt="youtubeIcon" />
-            </button>
-            <button className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark">
+            </Link>
+            <Link
+              href="https://snailbrook.gitbook.io/snailbrook"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
+            >
               <Image src={gitbookIcon} alt="gitbookIcon" />
-            </button>
+            </Link>
           </div>
         </div>
         <Image

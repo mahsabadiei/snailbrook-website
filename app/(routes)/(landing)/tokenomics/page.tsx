@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
@@ -15,6 +17,18 @@ import megaphone from "@/public/megaphone.webp";
 import coin from "@/public/coin.webp";
 
 export default function Page() {
+  const [copySuccess, setCopySuccess] = useState(
+    "0x6bc40d4099f9057b23af309c08d935b890d7adc0"
+  );
+
+  const onCopy = () => {
+    navigator.clipboard.writeText("0x6bc40d4099f9057b23af309c08d935b890d7adc0");
+    setCopySuccess("saved to the clipboard!");
+    setTimeout(() => {
+      setCopySuccess("0x6bc40d4099f9057b23af309c08d935b890d7adc0");
+    }, 1000);
+  };
+
   return (
     <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
       <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center gap-4 overflow-y-auto z-20">
@@ -41,14 +55,18 @@ export default function Page() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href=""
+                href="https://www.dextools.io/app/en/ether/pair-explorer/0xc6a45ecdc8bcef94c476647be1303fd83d438cd0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg bg-gray-gradient-normal"
               >
                 <span className="text-sm font-medium text-white">DEXTOOLS</span>
                 <Image src={openIcon} alt="open" />
               </Link>
               <Link
-                href=""
+                href="https://etherscan.io/address/0x6bc40d4099f9057b23af309c08d935b890d7adc0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg bg-gray-gradient-normal"
               >
                 <span className="text-sm font-medium text-white">
@@ -57,7 +75,9 @@ export default function Page() {
                 <Image src={openIcon} alt="open" />
               </Link>
               <Link
-                href=""
+                href="https://www.coingecko.com/en/coins/snailbrook"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg bg-gray-gradient-normal"
               >
                 <span className="text-sm font-medium text-white">
@@ -70,10 +90,13 @@ export default function Page() {
               <h5 className="text-sm font-medium text-white">
                 TOKEN CONTRACT ADDRESS
               </h5>
-              <div className="flex flex-col sm:flex-row items-center gap-4">
+              <div
+                onClick={onCopy}
+                className="flex flex-col sm:flex-row items-center gap-4 cursor-pointer"
+              >
                 <Image src={copyIcon} alt="copy" />
                 <h6 className="text-base font-normal text-white">
-                  0x6bc40d4099f9057b23af309c08d935b890d7adc0
+                  {copySuccess}
                 </h6>
               </div>
             </div>
@@ -203,9 +226,14 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <button className="flex flex-row justify-center items-center px-8 py-3 lg:px-12 lg:py-5 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium">
+          <Link
+            href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x6bc40d4099f9057b23af309c08d935b890d7adc0&chain=mainnet"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row justify-center items-center px-8 py-3 lg:px-12 lg:py-5 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium"
+          >
             <span className="text-xl font-medium text-white">Buy $SNAIL</span>
-          </button>
+          </Link>
         </div>
       </article>
 

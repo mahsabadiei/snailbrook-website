@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
@@ -24,10 +25,15 @@ export default function Page() {
             cause.
           </p>
         </span>
-        <button className="flex flex-row w-[258px] h-[54px] xl:w-[279px] xl:h-[72px] gap-2 justify-center items-center px-9 py-2 xl:px-11 xl:py-4 rounded-[48px] bg-gradient-to-r from-purple-light to-purple-medium">
+        <Link
+          href="https://t.me/Snailbrook_Entry"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-row w-[258px] h-[54px] xl:w-[279px] xl:h-[72px] gap-2 justify-center items-center px-9 py-2 xl:px-11 xl:py-4 rounded-[48px] bg-gradient-to-r from-purple-light to-purple-medium"
+        >
           <Image src={telegramIcon} alt="download" />
           <span className="text-xl font-medium text-white">Join the memes</span>
-        </button>
+        </Link>
       </article>
 
       <Image

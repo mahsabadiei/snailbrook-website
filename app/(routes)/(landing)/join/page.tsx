@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
@@ -27,97 +28,137 @@ export default function Page() {
         </p>
         <div className="flex flex-row flex-wrap items-center justify-center gap-4 lg:gap-8">
           <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-            <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen">
+            <Link
+              href="https://twitter.com/SnailBrookAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen"
+            >
               <Image
                 src={twitterIcon}
                 alt="twitterIcon"
                 className="xl:w-12 xl:h-12"
               />
-            </button>
+            </Link>
             <h2 className="text-[8px] sm:text-base font-bold text-white">
               Twitter
             </h2>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-            <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen">
+            <Link
+              href="https://t.me/SnailBrook_Ann"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen"
+            >
               <Image
                 src={telegramIcon}
                 alt="telegramIcon"
                 className="xl:w-12 xl:h-12"
               />
-            </button>
+            </Link>
             <h2 className="text-[8px] sm:text-base font-bold text-white">
               Telegram
             </h2>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-            <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen">
+            <Link
+              href="https://medium.com/@SnailBrook"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen"
+            >
               <Image
                 src={mediumIcon}
                 alt="mediumIcon"
                 className="xl:w-12 xl:h-12"
               />
-            </button>
+            </Link>
             <h2 className="text-[8px] sm:text-base font-bold text-white">
               Medium
             </h2>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-            <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen">
+            <Link
+              href="https://www.tiktok.com/@snailbrookai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen"
+            >
               <Image
                 src={tiktokIcon}
                 alt="tiktokIcon"
                 className="xl:w-12 xl:h-12"
               />
-            </button>
+            </Link>
             <h2 className="text-[8px] sm:text-base font-bold text-white">
               TikTok
             </h2>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-            <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen">
+            <Link
+              href="https://www.reddit.com/r/SNaiLBROOKAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen"
+            >
               <Image
                 src={redditIcon}
                 alt="redditIcon"
                 className="xl:w-12 xl:h-12"
               />
-            </button>
+            </Link>
             <h2 className="text-[8px] sm:text-base font-bold text-white">
               Reddit
             </h2>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-            <button className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen">
+            <Link
+              href="https://discord.io/SnailBrook"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen"
+            >
               <Image
                 src={discordIcon}
                 alt="discordIcon"
                 className="xl:w-12 xl:h-12"
               />
-            </button>
+            </Link>
             <h2 className="text-[8px] sm:text-base font-bold text-white">
               Discord
             </h2>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-            <button className="flex items-center justify-center  w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen">
+            <Link
+              href="https://www.youtube.com/@SNAILBROOK"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center  w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen"
+            >
               <Image
                 src={youtubeIcon}
                 alt="youtubeIcon"
                 className="xl:w-12 xl:h-12"
               />
-            </button>
+            </Link>
             <h2 className="text-[8px] sm:text-base font-bold text-white">
               YouTube
             </h2>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 sm:gap-4">
-            <button className="flex items-center justify-center  w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen">
+            <Link
+              href="https://snailbrook.gitbook.io/snailbrook"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center  w-[49px] h-[50px] xl:w-[90px] xl:h-[92px] relative rounded-xl xl:rounded-3xl bg-gray-gradient-normal gradinetBorderWithTransparentBg gradinetBorderYellowToGreen"
+            >
               <Image
                 src={gitbookIcon}
                 alt="gitbookIcon"
                 className="xl:w-12 xl:h-12"
               />
-            </button>
+            </Link>
             <h2 className="text-[8px] sm:text-base font-bold text-white">
               Gitbook
             </h2>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
@@ -6,6 +7,55 @@ import nightBg from "@/public/night-bg.webp";
 import insideBg from "@/public/inside-bg.webp";
 import playIcon from "@/public/play-icon.svg";
 import Carousel from "./carousel";
+
+export type Video = {
+  id: string;
+  src: string;
+  title?: string;
+};
+
+const videoList: Video[] = [
+  {
+    id: "1",
+    src: "https://www.youtube.com/watch?v=DRZPX8EyQl0",
+    title: "🌕 SnailBrook Episode 5: Moonbound with Legends! 🚀",
+  },
+  {
+    id: "2",
+    src: "https://www.youtube.com/watch?v=GczvaZVQKhU",
+    title: "SNAILBROOK DEFEATS SLIMY SAM - 🐌🚀CRYPTO BULL MARKET🐌🚀",
+  },
+  {
+    id: "3",
+    src: "https://www.youtube.com/watch?v=nnJU3rPdMKQ&t=2s",
+    title: "SNAILBROOK - 🐌STAYINBROKE TO THE UTOPIA SNAILBROOK🐌🚀",
+  },
+  {
+    id: "4",
+    src: "https://www.youtube.com/watch?v=PoQDo_OXjV0",
+    title: "SNAILBROOK IS COMING ASIA🐌💫",
+  },
+  {
+    id: "5",
+    src: "https://www.youtube.com/watch?v=dBCQRBnUk9o",
+    title: "Snailbrook - $6 MILLION BURN IS LIVE🔥",
+  },
+  {
+    id: "6",
+    src: "https://www.youtube.com/watch?v=7G17fyR6dek",
+    title: "SnailBrook - Finn's Salvation",
+  },
+  {
+    id: "7",
+    src: "https://www.youtube.com/watch?v=-RtVvUNFH40",
+    title: "Snailbrook - United Meme Dance Party",
+  },
+  {
+    id: "8",
+    src: "https://www.youtube.com/watch?v=EuNhGEOjJME",
+    title: "Snailbrook - Fly Me to The Moon; Let me Play Among The Stars",
+  },
+];
 
 export default function Page() {
   return (
@@ -20,12 +70,17 @@ export default function Page() {
             <br /> join Finn on thrilling adventures by subscribing to our
             <br /> YouTube channel.
           </p>
-          <button className="flex flex-row justify-center items-center gap-3 px-10 py-4 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium">
+          <Link
+            href="https://www.youtube.com/@SNAILBROOK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-row justify-center items-center gap-3 px-10 py-4 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium"
+          >
             <Image src={playIcon} alt="play" />
             <span className="text-sm font-medium text-white">Subscribe</span>
-          </button>
+          </Link>
         </div>
-        <Carousel />
+        <Carousel list={videoList} />
       </article>
 
       <Image

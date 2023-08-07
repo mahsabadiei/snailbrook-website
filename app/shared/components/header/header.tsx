@@ -52,12 +52,12 @@ export default function Header({}: HeaderProps) {
           </nav>
         ) : null}
         <div className="flex flex-row items-center gap-x-6">
-          <button className="hidden sm:flex sm:items-center sm:justify-center p-4 rounded-[48px] bg-gray-gradient-dark">
+          <button className="hidden sm:flex sm:items-center sm:justify-center p-4 rounded-[48px] bg-gray-gradient-dark dark:bg-gray-gradient-base">
             <Image src={volumeHighIcon} alt="volumeHighIcon" />
           </button>
           <button
             onClick={() => router.push(`?menu-modal=true`)}
-            className="flex items-center justify-center p-4 rounded-[48px] bg-gray-gradient-dark"
+            className="flex items-center justify-center p-4 rounded-[48px] bg-gray-gradient-dark dark:bg-gray-gradient-base"
           >
             <Image src={categoryIcon} alt="categoryIcon" />
           </button>
