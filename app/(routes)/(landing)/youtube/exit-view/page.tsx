@@ -2,11 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
-import cloudsBg from "@/public/clouds-bg.webp";
-import nightBg from "@/public/night-bg.webp";
-import insideBg from "@/public/inside-bg.webp";
 import playIcon from "@/public/play-icon.svg";
-import Carousel from "./carousel";
+import Carousel from "../carousel";
 import { SUBSCRIBE } from "@/app/shared/constants";
 
 export type Video = {
@@ -60,8 +57,14 @@ const videoList: Video[] = [
 
 export default function Page() {
   return (
-    <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] gap-8 overflow-y-auto z-20">
+    <section
+      className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative"
+      style={{
+        backgroundImage:
+          "radial-gradient(70.71% 70.71% at 50% 50%, #4E65FD 0%, rgba(57, 72, 175, 0.00) 55.00%)",
+      }}
+    >
+     <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] gap-8 overflow-y-auto z-20">
         <h1 className="text-3xl lg:text-[54px] font-medium lg:leading-[68px] text-white text-center lg:text-start">
           Latest from YouTube
         </h1>
@@ -82,14 +85,7 @@ export default function Page() {
           </Link>
         </div>
         <Carousel list={videoList} />
-        <Link
-          href="youtube/exit-view"
-          className="text-center m-auto absolute bottom-10 left-0 right-0"
-        >
-          <span className="text-xl font-bold text-white">
-            Go to to exit room view
-          </span>
-        </Link>
+
       </article>
 
       <Image
@@ -110,29 +106,6 @@ export default function Page() {
         quality={100}
         sizes="100vw"
       />
-      <Image
-        src={insideBg}
-        alt="insideBg"
-        className="object-cover"
-        placeholder="blur"
-        priority
-        quality={100}
-        fill
-        sizes="100vw"
-      />
-      <picture>
-        <source srcSet={nightBg.src} media="(prefers-color-scheme: dark)" />
-        <Image
-          src={cloudsBg}
-          alt="cloudsBg"
-          className="object-cover -z-10 "
-          placeholder="blur"
-          priority
-          quality={100}
-          fill
-          sizes="100vw"
-        />
-      </picture>
     </section>
   );
 }

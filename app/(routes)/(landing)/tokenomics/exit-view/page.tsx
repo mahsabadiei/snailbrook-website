@@ -4,9 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
-import cloudsBg from "@/public/clouds-bg.webp";
-import nightBg from "@/public/night-bg.webp";
-import insideBg from "@/public/inside-bg.webp";
 import openIcon from "@/public/open-icon.svg";
 import copyIcon from "@/public/copy-icon.svg";
 import rocket from "@/public/rocket.webp";
@@ -35,7 +32,13 @@ export default function Page() {
   };
 
   return (
-    <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
+    <section
+      className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative"
+      style={{
+        backgroundImage:
+          "radial-gradient(70.71% 70.71% at 50% 50%, #4E65FD 0%, rgba(57, 72, 175, 0.00) 55.00%)",
+      }}
+    >
       <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center gap-4 overflow-y-auto z-20">
         <h2 className="text-sm font-medium text-white text-center">
           OUR TOKEN
@@ -75,7 +78,7 @@ export default function Page() {
                 className="flex flex-row items-center justify-center gap-4 px-4 py-3 rounded-lg bg-gray-gradient-normal"
               >
                 <span className="text-sm font-medium text-white">
-                  ETHERSCAN
+                  Etherscan
                 </span>
                 <Image src={openIcon} alt="open" />
               </Link>
@@ -240,11 +243,6 @@ export default function Page() {
             <span className="text-xl font-medium text-white">Buy $SNAIL</span>
           </Link>
         </div>
-        <Link href="tokenomics/exit-view" className="m-auto absolute bottom-10">
-          <span className="text-xl font-bold text-white">
-            Go to to exit room view
-          </span>
-        </Link>
       </article>
 
       <Image
@@ -265,29 +263,6 @@ export default function Page() {
         quality={100}
         sizes="100vw"
       />
-      <Image
-        src={insideBg}
-        alt="insideBg"
-        className="object-cover"
-        placeholder="blur"
-        priority
-        quality={100}
-        fill
-        sizes="100vw"
-      />
-      <picture>
-        <source srcSet={nightBg.src} media="(prefers-color-scheme: dark)" />
-        <Image
-          src={cloudsBg}
-          alt="cloudsBg"
-          className="object-cover -z-10 "
-          placeholder="blur"
-          priority
-          quality={100}
-          fill
-          sizes="100vw"
-        />
-      </picture>
     </section>
   );
 }

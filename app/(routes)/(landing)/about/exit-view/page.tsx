@@ -2,25 +2,28 @@ import Image from "next/image";
 import Link from "next/link";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
-import cloudsBg from "@/public/clouds-bg.webp";
-import nightBg from "@/public/night-bg.webp";
-import insideBg from "@/public/inside-bg.webp";
 import telegramIcon from "@/public/telegram-icon.svg";
 import { SNAILTEAM } from "@/app/shared/constants";
 
 export default function Page() {
   return (
-    <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
-      <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center justify-center gap-8 lg:gap-[56px] z-20">
-        <h1 className="text-3xl lg:text-[54px] font-bold text-white lg:leading-[68px]">
+    <section
+      className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative"
+      style={{
+        backgroundImage:
+          "radial-gradient(70.71% 70.71% at 50% 50%, #4E65FD 0%, rgba(57, 72, 175, 0.00) 55.00%)",
+      }}
+    >
+      <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center justify-center gap-8 lg:gap-[56px] text-white z-20">
+        <h1 className="text-3xl lg:text-[54px] font-bold lg:leading-[68px]">
           Utopia For All
         </h1>
         <span>
-          <p className="text-base lg:text-xl text-white text-center mb-4 xl:mb-7">
+          <p className="text-base lg:text-xl mb-4 xl:mb-7 text-center">
             SnailBrook marks the beginning of a new age of community-owned,
             community-driven, and community-ocused crypto.
           </p>
-          <p className="text-base lg:text-xl text-white text-center">
+          <p className="text-base lg:text-xl text-center">
             Join the decentralized meme coin project that aims to create the
             ultimate cult community by uniting all meme coins for a common
             cause.
@@ -34,11 +37,6 @@ export default function Page() {
         >
           <Image src={telegramIcon} alt="download" />
           <span className="text-xl font-medium text-white">Join the memes</span>
-        </Link>
-        <Link href="about/exit-view" className="m-auto absolute bottom-10">
-          <span className="text-xl font-bold text-white">
-            Go to to exit room view
-          </span>
         </Link>
       </article>
 
@@ -60,29 +58,6 @@ export default function Page() {
         quality={100}
         sizes="100vw"
       />
-      <Image
-        src={insideBg}
-        alt="insideBg"
-        className="object-cover"
-        placeholder="blur"
-        priority
-        quality={100}
-        fill
-        sizes="100vw"
-      />
-      <picture>
-        <source srcSet={nightBg.src} media="(prefers-color-scheme: dark)" />
-        <Image
-          src={cloudsBg}
-          alt="cloudsBg"
-          className="object-cover -z-10 "
-          placeholder="blur"
-          priority
-          quality={100}
-          fill
-          sizes="100vw"
-        />
-      </picture>
     </section>
   );
 }

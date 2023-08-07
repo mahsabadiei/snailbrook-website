@@ -2,9 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import cardBg from "@/public/card-bg.webp";
 import cardMobileBg from "@/public/card-mobile-bg.webp";
-import cloudsBg from "@/public/clouds-bg.webp";
-import nightBg from "@/public/night-bg.webp";
-import insideBg from "@/public/inside-bg.webp";
 import twitterIcon from "@/public/twitter-icon.svg";
 import telegramIcon from "@/public/telegram-icon.svg";
 import mediumIcon from "@/public/medium-icon.svg";
@@ -17,7 +14,13 @@ import { DISCORD, GITBOOK, MEDIUM, REDDIT, TELEGRAM, TIKTOK, TWITTER, YOUTUBE } 
 
 export default function Page() {
   return (
-    <section className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative">
+    <section
+      className="flex flex-col min-h-screen items-center justify-center overflow-hidden relative"
+      style={{
+        backgroundImage:
+          "radial-gradient(70.71% 70.71% at 50% 50%, #4E65FD 0%, rgba(57, 72, 175, 0.00) 55.00%)",
+      }}
+    >
       <article className="flex flex-col w-[260px] h-[390px] sm:w-[537px] sm:h-[320px] lg:w-[850px] lg:h-[480px] items-center justify-center gap-4 lg:gap-8 z-20">
         <h1 className="text-3xl lg:text-[54px] font-bold xl:font-medium lg:leading-[68px] text-white text-center">
           Official Social Media
@@ -165,11 +168,6 @@ export default function Page() {
             </h2>
           </div>
         </div>
-        <Link href="join/exit-view" className="m-auto absolute bottom-10">
-          <span className="text-xl font-bold text-white">
-            Go to to exit room view
-          </span>
-        </Link>
       </article>
 
       <Image
@@ -190,29 +188,6 @@ export default function Page() {
         quality={100}
         sizes="100vw"
       />
-      <Image
-        src={insideBg}
-        alt="insideBg"
-        className="object-cover"
-        placeholder="blur"
-        priority
-        quality={100}
-        fill
-        sizes="100vw"
-      />
-      <picture>
-        <source srcSet={nightBg.src} media="(prefers-color-scheme: dark)" />
-        <Image
-          src={cloudsBg}
-          alt="cloudsBg"
-          className="object-cover -z-10 "
-          placeholder="blur"
-          priority
-          quality={100}
-          fill
-          sizes="100vw"
-        />
-      </picture>
     </section>
   );
 }

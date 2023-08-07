@@ -16,6 +16,7 @@ import youtubeIcon from "@/public/youtube-icon.svg";
 import gitbookIcon from "@/public/gitbook-icon.svg";
 import downloadIcon from "@/public/download-icon.svg";
 import glow from "@/public/glow.svg";
+import { BUYSNAIL, DISCORD, GITBOOK, LITEPAPER, MEDIUM, REDDIT, TELEGRAM, TIKTOK, TWITTER, YOUTUBE } from "@/app/shared/constants";
 
 export default function Hero() {
   return (
@@ -33,7 +34,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-col items-center h-[20vh] justify-end z-10">
           <Link
-            href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x6bc40d4099f9057b23af309c08d935b890d7adc0&chain=mainnet"
+            href={BUYSNAIL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center items-center w-[222px] h-[66px] px-6 sm:px-8 py-4 rounded-3xl backdrop-blur-sm gradinetBorderWithTransparentBg gradinetBorderBlueToPink bg-gradient-to-r from-purple-gradiant-light to-purple-gradiant-medium"
@@ -53,7 +54,7 @@ export default function Hero() {
               The Snailbrook Litepaper is out.
             </h1>
             <Link
-              href="https://uploads-ssl.webflow.com/646759c55a25df70a3bdeb83/64a3121f5aae2322e980d86e_Snailbrook%20Litepaper%20v0.1.pdf"
+              href={LITEPAPER}
               target="_blank"
               rel="noopener noreferrer"
               className="flex flex-row gap-3 justify-center items-center px-12 py-3 rounded-[14px] bg-gradient-to-r from-purple-light to-purple-medium"
@@ -66,7 +67,7 @@ export default function Hero() {
           </div>
           <div className="flex flex-row gap-x-4 sm:gap-x-6 items-center">
             <Link
-              href="https://twitter.com/SnailBrookAI"
+              href={TWITTER}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
@@ -74,7 +75,7 @@ export default function Hero() {
               <Image src={twitterIcon} alt="twitterIcon" />
             </Link>
             <Link
-              href="https://t.me/SnailBrook_Ann"
+              href={TELEGRAM}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
@@ -82,7 +83,7 @@ export default function Hero() {
               <Image src={telegramIcon} alt="telegramIcon" />
             </Link>
             <Link
-              href="https://medium.com/@SnailBrook"
+              href={MEDIUM}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
@@ -90,7 +91,7 @@ export default function Hero() {
               <Image src={mediumIcon} alt="mediumIcon" />
             </Link>
             <Link
-              href="https://www.tiktok.com/@snailbrookai"
+              href={TIKTOK}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
@@ -98,7 +99,7 @@ export default function Hero() {
               <Image src={tiktokIcon} alt="tiktokIcon" />
             </Link>
             <Link
-              href="https://www.reddit.com/r/SNaiLBROOKAI"
+              href={REDDIT}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
@@ -106,7 +107,7 @@ export default function Hero() {
               <Image src={redditIcon} alt="redditIcon" />
             </Link>
             <Link
-              href="https://discord.io/SnailBrook"
+              href={DISCORD}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
@@ -114,7 +115,7 @@ export default function Hero() {
               <Image src={discordIcon} alt="discordIcon" />
             </Link>
             <Link
-              href="https://www.youtube.com/@SNAILBROOK"
+              href={YOUTUBE}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
@@ -122,7 +123,7 @@ export default function Hero() {
               <Image src={youtubeIcon} alt="youtubeIcon" />
             </Link>
             <Link
-              href="https://snailbrook.gitbook.io/snailbrook"
+              href={GITBOOK}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-8 h-8 sm:w-11 sm:h-11 rounded-[48px] backdrop-blur bg-gray-gradient-dark"
