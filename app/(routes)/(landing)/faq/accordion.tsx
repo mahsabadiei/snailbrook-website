@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FramerMotionWrapper } from "@/app/shared/components/framer-motion-wrapper/framer-motion-wrapper";
@@ -8,7 +8,7 @@ import arrowDownIcon from "@/public/arrow-down-icon.svg";
 
 type AccordionProps = {
   question: string;
-  answer: string;
+  answer: any;
 };
 
 const Accordion = ({ question, answer }: AccordionProps) => {

@@ -27,7 +27,7 @@ const faqList = [
     answer: (
       <>
         Our dedicated team is hard at work building the SnailBrook platform.
-        We're focused on creating an enhanced, interactive, and decentralized
+        We&apos;re focused on creating an enhanced, interactive, and decentralized
         cryptocurrency data platform. For more details about the platform and
         its features, we invite you to explore the{" "}
         <Link
@@ -60,7 +60,7 @@ const faqList = [
         The SNAIL token holds tremendous utility within the SnailBrook platform.
         By staking SNAIL tokens, users can access different tiers of benefits,
         including premium features and insights. Additionally, SNAIL token
-        stakers receive a portion of the platform's revenue, generated through
+        stakers receive a portion of the platform&apos;s revenue, generated through
         advertisements and team-created pages. You can get more information in{" "}
         <Link
           href={"/tokenomics"}
@@ -181,7 +181,7 @@ const faqList = [
         >
           Follow him on Twitter
         </Link>
-        , don't let it slide.
+        , don&apos;t let it slide.
         <br /> In this decentralized Utopia, we thrive,
         <br /> Led by a leader who makes memes unite.
       </>
