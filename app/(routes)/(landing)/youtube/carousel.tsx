@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { Video } from "./content";
 import dynamic from "next/dynamic";
 import prevIcon from "@/public/prev-icon.svg";
 import nextIcon from "@/public/next-icon.svg";
-import { Video } from "./page";
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 type CarouselProps = {
