@@ -64,3 +64,20 @@
     var(--pink-gradiant-medium)
   );
 }
+
+.up,
+.down {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: solid white;
+  border-width: 2px 2px 0 0;
+}
+
+.up {
+  transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(135deg);
+}

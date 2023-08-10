@@ -131,7 +131,7 @@ export default function MenuModal() {
           target=""
           alt="cityview"
           title="cityview"
-          href="/"
+          href="/home"
           coords="1109,620,84"
           shape="circle"
         />
@@ -214,7 +214,7 @@ export default function MenuModal() {
           target=""
           alt="cityview"
           title="cityview"
-          href="/"
+          href="/home"
           coords="251,543,47"
           shape="circle"
         />

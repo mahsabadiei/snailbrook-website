@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
-import logo from "@/public/snailbrook-logo.webp";
+import snailbrookLogo from "@/public/snailbrook-logo.svg";
 import volumeHighIcon from "@/public/volume-high-icon.svg";
 import categoryIcon from "@/public/category-icon.svg";
 
@@ -12,14 +12,14 @@ type HeaderProps = {};
 export default function Header({}: HeaderProps) {
   const router = useRouter();
   const pathname = usePathname();
-  const showNav = pathname === "/" ?? false;
+  const showNav = pathname === "/home" ?? false;
 
   return (
     <header className="w-full px-5 sm:px-16 py-6 fixed z-30">
       <div className="flex flex-row items-center justify-between gap-4">
-        <Link href="/">
+        <Link href="/home">
           <Image
-            src={logo}
+            src={snailbrookLogo}
             alt="website logo"
             width={164}
             height={44}
@@ -43,7 +43,7 @@ export default function Header({}: HeaderProps) {
             <Link href="/faq" className="font-medium text-white">
               <span>Faq</span>
             </Link>
-            <Link href="/" className="font-medium text-white">
+            <Link href="/home" className="font-medium text-white">
               <span>Platform</span>
             </Link>
             <div className="flex justify-center items-center p-1 absolute top-1 right-6 rounded-[48px] bg-gray-gradient-normal">

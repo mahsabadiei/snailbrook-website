@@ -1,9 +1,9 @@
-import Hero from "./(routes)/(landing)/hero/hero";
+import Preloader from "./(routes)/(landing)/preloader/preloader";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <Hero />
+      <Preloader />
     </main>
   );
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Card from "./card";
 import { SNAILTEAM } from "@/app/shared/constants";
-import snail from "@/public/snail.webp";
+import snail from "@/public/snail-to-left-icon.svg";
 
 export default function Content() {
   return (
@@ -51,6 +51,8 @@ export default function Content() {
         src={snail}
         alt="snail"
         className="hidden lg:block absolute top-[320px] right-[380px] z-50"
+        sizes="100vw"
+        quality={100}
       />
       <div className="flex flex-col-reverse lg:flex-row w-[80%] items-center justify-between">
         <Card
