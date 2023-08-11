@@ -4,12 +4,12 @@ import Link from "next/link";
 import { useState } from "react";
 import openIcon from "@/public/open-icon.svg";
 import copyIcon from "@/public/copy-icon.svg";
-import rocket from "@/public/rocket.webp";
-import balloon from "@/public/balloon.webp";
-import fire from "@/public/fire.webp";
-import key from "@/public/key.webp";
-import megaphone from "@/public/megaphone.webp";
-import coin from "@/public/coin.webp";
+import rocketIcon from "@/public/rocket-icon.svg";
+import balloonIcon from "@/public/balloon-icon.svg";
+import fireIcon from "@/public/fire-icon.svg";
+import keyIcon from "@/public/key-icon.svg";
+import megaphoneIcon from "@/public/megaphone-icon.svg";
+import coinIcon from "@/public/coin-icon.svg";
 import {
   BUYSNAIL,
   COINGECKO,
@@ -105,7 +105,7 @@ export default function Content() {
         <div className="flex flex-col sm:flex-row items-start gap-7">
           <div className="p-2 rounded-2xl bg-gray-gradient-normal">
             <Image
-              src={rocket}
+              src={rocketIcon}
               alt="rocket"
               className="object-contain "
               width={64}
@@ -126,7 +126,7 @@ export default function Content() {
         <div className="flex flex-col sm:flex-row items-start gap-7">
           <div className="p-2 rounded-2xl bg-gray-gradient-normal">
             <Image
-              src={balloon}
+              src={balloonIcon}
               alt="balloon"
               className="object-contain"
               width={64}
@@ -147,7 +147,7 @@ export default function Content() {
         <div className="flex flex-col sm:flex-row items-start gap-7">
           <div className="p-2 rounded-2xl bg-gray-gradient-normal">
             <Image
-              src={fire}
+              src={fireIcon}
               alt="fire"
               className="object-contain"
               width={64}
@@ -176,7 +176,7 @@ export default function Content() {
       <div className="flex flex-col xl:flex-row gap-10">
         <div className="flex flex-col w-[245px] items-start justify-center gap-6 p-6 rounded-2xl bg-gray-gradient-normal">
           <Image
-            src={key}
+            src={keyIcon}
             alt="key"
             className="object-contain p-2 rounded-2xl bg-gray-gradient-normal"
             width={64}
@@ -192,7 +192,7 @@ export default function Content() {
         </div>
         <div className="flex flex-col w-[245px] items-start justify-center gap-6 p-6 rounded-2xl bg-gray-gradient-normal">
           <Image
-            src={megaphone}
+            src={megaphoneIcon}
             alt="megaphone"
             className="object-contain p-2 rounded-2xl bg-gray-gradient-normal"
             width={64}
@@ -211,7 +211,7 @@ export default function Content() {
         </div>
         <div className="flex flex-col w-[245px] items-start justify-center gap-6 p-6 rounded-2xl bg-gray-gradient-normal">
           <Image
-            src={coin}
+            src={coinIcon}
             alt="coin"
             className="object-contain p-2 rounded-2xl bg-gray-gradient-normal"
             width={64}

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { motion, useIsPresent } from "framer-motion";
 import { FramerMotionWrapper } from "@/app/shared/components/framer-motion-wrapper/framer-motion-wrapper";
 import snail from "@/public/snail-to-right-icon.svg";
-import wave from "@/public/wave.svg";
+import waveBg from "@/public/wave-bg.svg";
 import skyBg from "@/public/sky-bg.webp";
 import spaceship from "@/public/spaceship.webp";
 
@@ -80,7 +80,7 @@ export default function Preloader() {
               style={{ originY: isPresent ? 1 : 0 }}
             >
               <Image
-                src={wave}
+                src={waveBg}
                 alt="wave"
                 className="w-full object-cover absolute left-0 right-0 bottom-0 -z-10"
                 priority

@@ -30,7 +30,7 @@ import discordIcon from "@/public/discord-icon.svg";
 import youtubeIcon from "@/public/youtube-icon.svg";
 import gitbookIcon from "@/public/gitbook-icon.svg";
 import downloadIcon from "@/public/download-icon.svg";
-import glow from "@/public/glow.svg";
+import glowBt from "@/public/glow-bt.svg";
 
 export default function Page() {
   const isPresent = useIsPresent();
@@ -64,7 +64,7 @@ export default function Page() {
             >
               <p className="text-[27px] font-bold text-white">Buy $SNAIL</p>
             </Link>
-            <Image src={glow} alt="glow" quality={100} />
+            <Image src={glowBt} alt="glow" quality={100} />
           </div>
           <div className="flex flex-row w-full h-[20vh] justify-center lg:justify-between px-5 sm:px-16 z-10">
             <div className="hidden lg:flex flex-col h-[110px] gap-2 p-4 relative rounded-3xl backdrop-blur bg-gray-gradient-dark border-2 border-blue-medium">
