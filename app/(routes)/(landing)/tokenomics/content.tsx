@@ -108,8 +108,6 @@ export default function Content() {
               src={rocketIcon}
               alt="rocket"
               className="object-contain "
-              width={64}
-              height={64}
               sizes="100vw"
               quality={100}
             />
@@ -129,8 +127,6 @@ export default function Content() {
               src={balloonIcon}
               alt="balloon"
               className="object-contain"
-              width={64}
-              height={64}
               sizes="100vw"
               quality={100}
             />
@@ -150,8 +146,6 @@ export default function Content() {
               src={fireIcon}
               alt="fire"
               className="object-contain"
-              width={64}
-              height={64}
               sizes="100vw"
               quality={100}
             />
@@ -179,8 +173,6 @@ export default function Content() {
             src={keyIcon}
             alt="key"
             className="object-contain p-2 rounded-2xl bg-gray-gradient-normal"
-            width={64}
-            height={64}
             sizes="100vw"
             quality={100}
           />
@@ -195,8 +187,6 @@ export default function Content() {
             src={megaphoneIcon}
             alt="megaphone"
             className="object-contain p-2 rounded-2xl bg-gray-gradient-normal"
-            width={64}
-            height={64}
             sizes="100vw"
             quality={100}
           />
@@ -214,8 +204,6 @@ export default function Content() {
             src={coinIcon}
             alt="coin"
             className="object-contain p-2 rounded-2xl bg-gray-gradient-normal"
-            width={64}
-            height={64}
             sizes="100vw"
             quality={100}
           />
