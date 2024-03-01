@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Carousel from "./carousel";
-import { SUBSCRIBE } from "@/app/shared/constants";
+import { SUBSCRIBE } from "@/app/utils/constants";
 import playIcon from "@/public/play-icon.svg";
-
 
 export type Video = {
   id: string;

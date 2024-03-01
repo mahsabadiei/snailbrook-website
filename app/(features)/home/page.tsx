@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useIsPresent } from "framer-motion";
-import { FramerMotionWrapper } from "@/app/shared/components/framer-motion-wrapper/framer-motion-wrapper";
+import { FramerMotionWrapper } from "@/app/components/framer-motion-wrapper/framer-motion-wrapper";
 import {
   BUYSNAIL,
   DISCORD,
@@ -14,7 +14,7 @@ import {
   TIKTOK,
   TWITTER,
   YOUTUBE,
-} from "@/app/shared/constants";
+} from "@/app/utils/constants";
 import islandBg from "@/public/island-bg.webp";
 import cloudsBg from "@/public/clouds-bg.webp";
 import nightBg from "@/public/night-bg.webp";
@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <FramerMotionWrapper>
       <motion.section
-        initial={{ opacity: 0}}
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.5, ease: "circOut" } }}
         exit={{ opacity: 1, transition: { duration: 0.5, ease: "circIn" } }}
         style={{ opacity: isPresent ? 1 : 0 }}

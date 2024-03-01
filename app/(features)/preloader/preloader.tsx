@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion, useIsPresent } from "framer-motion";
-import { FramerMotionWrapper } from "@/app/shared/components/framer-motion-wrapper/framer-motion-wrapper";
+import { FramerMotionWrapper } from "@/app/components/framer-motion-wrapper/framer-motion-wrapper";
 import snail from "@/public/snail-to-right-icon.svg";
 import waveBg from "@/public/wave-bg.svg";
 import skyBg from "@/public/sky-bg.webp";
