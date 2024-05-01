@@ -1,4 +1,4 @@
-import Preloader from "../components/preloader/preloader";
+import Preloader from "@/components/preloader/preloader";
 
 export default function Page() {
   return (
