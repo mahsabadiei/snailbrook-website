@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import telegramIcon from "../../../public/telegram-icon.svg";
-import { SNAILTEAM } from "@/utils/constants";
+import { SNAILTEAM } from "@/lib/utils/constants";
 
 export default function Content() {
   return (

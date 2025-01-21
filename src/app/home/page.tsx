@@ -14,7 +14,7 @@ import {
   TIKTOK,
   TWITTER,
   YOUTUBE,
-} from "@/utils/constants";
+} from "@/lib/utils/constants";
 import islandBg from "../../../public/island-bg.webp";
 import cloudsBg from "../../../public/clouds-bg.webp";
 import nightBg from "../../../public/night-bg.webp";

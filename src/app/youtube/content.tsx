@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Carousel from "./carousel";
-import { SUBSCRIBE } from "@/utils/constants";
+import { SUBSCRIBE } from "@/lib/utils/constants";
 import playIcon from "../../../public/play-icon.svg";
 
 export type Video = {

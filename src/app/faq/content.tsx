@@ -6,7 +6,7 @@ import {
   GOVFINNTWITTER,
   LITEPAPER,
   SNAILTEAM,
-} from "@/utils/constants";
+} from "@/lib/utils/constants";
 
 const faqList = [
   {

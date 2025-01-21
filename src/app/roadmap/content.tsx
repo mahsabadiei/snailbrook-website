@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./card";
-import { SNAILTEAM } from "@/utils/constants";
+import { SNAILTEAM } from "@/lib/utils/constants";
 import snail from "../../../public/snail-to-left-icon.svg";
 
 export default function Content() {

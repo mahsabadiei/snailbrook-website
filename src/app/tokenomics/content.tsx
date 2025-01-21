@@ -16,7 +16,7 @@ import {
   DEXTOOLS,
   ETHERSCAN,
   TOKEN,
-} from "@/utils/constants";
+} from "@/lib/utils/constants";
 
 export default function Content() {
   const [copySuccess, setCopySuccess] = useState(TOKEN);

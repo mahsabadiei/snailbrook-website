@@ -9,7 +9,7 @@ import {
   TIKTOK,
   TWITTER,
   YOUTUBE,
-} from "@/utils/constants";
+} from "@/lib/utils/constants";
 import twitterIcon from "../../../public/twitter-icon.svg";
 import telegramIcon from "../../../public/telegram-icon.svg";
 import mediumIcon from "../../../public/medium-icon.svg";
