@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import type { Metadata } from "next";
 import { baiJamjuree } from "../styles/fonts";
-import Header from "@/components/ui/header/header";
-import MenuModal from "@/components/ui/menu-modal/menu-modal";
+import Header from "@/components/header/header";
+import MenuModal from "@/components/menu-modal/menu-modal";
 
 export const metadata: Metadata = {
   title: "Snailbrook",

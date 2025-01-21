@@ -2,9 +2,9 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
-import elevatorBg from "../../../../public/elevator-bg.webp";
-import elevatorMobileBg from "../../../../public/elevator-mobile-bg.webp";
-import closeIcon from "../../../../public/close-icon.svg";
+import elevatorBg from "@/../public/elevator-bg.webp";
+import elevatorMobileBg from "@/../public/elevator-mobile-bg.webp";
+import closeIcon from "@/../public/close-icon.svg";
 
 export default function MenuModal() {
   const router = useRouter();

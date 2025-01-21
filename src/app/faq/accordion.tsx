@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { FramerMotionWrapper } from "../../components/framer-motion-wrapper/framer-motion-wrapper";
 import arrowRightIcon from "../../../public/arrow-right-icon.svg";
 import arrowDownIcon from "../../../public/arrow-down-icon.svg";

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, useIsPresent } from "framer-motion";
+import { motion, useIsPresent } from "motion/react";
 import { FramerMotionWrapper } from "@/components/framer-motion-wrapper/framer-motion-wrapper";
 import {
   BUYSNAIL,

@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
-import snailbrookLogo from "../../../../public/snailbrook-logo.svg";
-import volumeHighIcon from "../../../../public/volume-high-icon.svg";
-import categoryIcon from "../../../../public/category-icon.svg";
+import snailbrookLogo from "@/../public/snailbrook-logo.svg";
+import volumeHighIcon from "@/../public/volume-high-icon.svg";
+import categoryIcon from "@/../public/category-icon.svg";
 
 type HeaderProps = {};
 
